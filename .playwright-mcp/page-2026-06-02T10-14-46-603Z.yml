@@ -1,0 +1,805 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - navigation [ref=e6]:
+            - list [ref=e7]:
+              - listitem [ref=e8]:
+                - link "gitee logo" [ref=e9] [cursor=pointer]:
+                  - /url: /
+                  - generic [ref=e10]:
+                    - img [ref=e12]
+                    - img "gitee logo" [ref=e13]
+              - listitem [ref=e14]:
+                - link "开源" [ref=e15] [cursor=pointer]:
+                  - /url: /explore
+              - listitem [ref=e16]:
+                - generic [ref=e17] [cursor=pointer]:
+                  - generic [ref=e18]: 产品
+                  - img [ref=e19]
+              - listitem [ref=e23]:
+                - generic [ref=e24] [cursor=pointer]:
+                  - link "客户案例" [ref=e25]:
+                    - /url: /customers
+                  - img [ref=e26]
+              - listitem [ref=e30]:
+                - link "价格 特惠" [ref=e31] [cursor=pointer]:
+                  - /url: /enterprises/price
+                  - text: 价格
+                  - superscript [ref=e32]: 特惠
+              - listitem [ref=e33]:
+                - link "模力方舟 notification star" [ref=e34] [cursor=pointer]:
+                  - /url: https://moark.com/serverless-api/?utm_sources=site_nav
+                  - generic [ref=e35]: 模力方舟
+                  - img "notification star" [ref=e36]
+              - listitem [ref=e37]:
+                - generic [ref=e38] [cursor=pointer]:
+                  - generic [ref=e39]: 服务与支持
+                  - img [ref=e40]
+              - listitem [ref=e44]:
+                - generic [ref=e45] [cursor=pointer]:
+                  - link "我的" [ref=e46]:
+                    - /url: /
+                  - img [ref=e47]
+          - navigation [ref=e51]:
+            - list [ref=e52]:
+              - listitem [ref=e53]:
+                - textbox "搜开源" [ref=e55]
+              - listitem [ref=e56]:
+                - link [ref=e57] [cursor=pointer]:
+                  - /url: https://chat.gitee.com
+                  - img [ref=e59]
+              - listitem [ref=e61]:
+                - link "notifications" [ref=e63] [cursor=pointer]:
+                  - /url: /notifications
+                  - img [ref=e65]
+              - listitem [ref=e69]:
+                - img [ref=e71] [cursor=pointer]
+              - listitem [ref=e75]:
+                - generic [ref=e76] [cursor=pointer]:
+                  - generic [ref=e78]: 许
+                  - img [ref=e79]
+      - main [ref=e83]:
+        - generic [ref=e87]:
+          - heading "Gitee 企业版" [level=1] [ref=e88]
+          - generic [ref=e89]:
+            - paragraph [ref=e90]: 帮助企业迅速完成数字化转型，
+            - paragraph [ref=e91]: 定义企业自己的敏捷协作方式。
+          - generic [ref=e92]:
+            - link "免费使用" [ref=e93] [cursor=pointer]:
+              - /url: /enterprises/new?from=gitee.com
+              - button "免费使用" [ref=e94]:
+                - generic [ref=e95]: 免费使用
+            - button "私有部署咨询" [ref=e97] [cursor=pointer]:
+              - generic [ref=e98]: 私有部署咨询
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - heading "企业数字化转型所面临的难题" [level=2] [ref=e102]
+            - heading "如何以低成本的方式，快速打造一站式研发效能平台，又能保证信息安全" [level=3] [ref=e103]
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - generic [ref=e108]:
+                - img [ref=e110]
+                - img "缩减成本" [ref=e111]
+              - heading "缩减成本" [level=4] [ref=e112]
+              - paragraph [ref=e113]: DevOps 一站式平台搭建流程较长，消耗资源较多，如何降低成本去搭建平台困扰着企业
+            - generic [ref=e114]:
+              - generic [ref=e116]:
+                - img [ref=e118]
+                - img "平衡人力聚焦业务增长" [ref=e119]
+              - heading "平衡人力聚焦业务增长" [level=4] [ref=e120]
+              - paragraph [ref=e121]: 搭建和维护平台都需要人力，如何将有限人力投入在业务增长上是一个难题
+            - generic [ref=e122]:
+              - generic [ref=e124]:
+                - img [ref=e126]
+                - img "保障信息安全" [ref=e127]
+              - heading "保障信息安全" [level=4] [ref=e128]
+              - paragraph [ref=e129]: 企业上云和协同办公过程中，如何保障代码资产安全和数据安全，寻求一个解决方案
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - heading "业界成熟的数字化转型方案" [level=2] [ref=e133]
+            - heading "一站式研发平台，覆盖研发链路所有环节，将研发流程流程化、自动化、数据化" [level=3] [ref=e134]
+          - generic [ref=e136]:
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - img
+            - generic [ref=e138]:
+              - img [ref=e140]
+              - img [ref=e141]
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - paragraph [ref=e144]: 经过十多年的沉淀
+                - paragraph [ref=e145]: 已积累 42 万+ 企业和客户案例
+                - paragraph [ref=e146]: 数据资产安全有保障
+              - generic [ref=e147]:
+                - link "免费使用" [ref=e148] [cursor=pointer]:
+                  - /url: /enterprises/new?from=gitee.com
+                  - button "免费使用" [ref=e149]:
+                    - generic [ref=e150]: 免费使用
+                - button "私有部署咨询" [ref=e152] [cursor=pointer]:
+                  - generic [ref=e153]: 私有部署咨询
+        - generic [ref=e155]:
+          - generic [ref=e156]:
+            - heading "引入先进的生产价值流管理理念，助力业务持续创新" [level=2] [ref=e157]
+            - heading "适用于各类研发交付场景，促进价值流快速推动" [level=3] [ref=e158]
+          - generic [ref=e160]:
+            - generic [ref=e161]:
+              - generic [ref=e162]:
+                - generic [ref=e163]:
+                  - generic [ref=e165]:
+                    - img [ref=e167]
+                    - img "轻简灵活的项目协作" [ref=e168]
+                  - heading "轻简灵活的项目协作" [level=3] [ref=e169]
+                - list [ref=e170]:
+                  - listitem [ref=e171]:
+                    - generic [ref=e175]:
+                      - heading "项目管理全场景" [level=4] [ref=e176] [cursor=pointer]
+                      - generic [ref=e177]: 支持 Scrum、Kanban、瀑布等多种项目模板，适配工作项管理、迭代管理、里程碑管理等多种场景，让用户可以快速搭建符合团队需求的项目管理流程
+                  - listitem [ref=e178]:
+                    - generic [ref=e182]:
+                      - heading "研发管理全流程" [level=4] [ref=e183] [cursor=pointer]
+                      - generic [ref=e184]: 与代码管理、CI/CD、测试管理等工具无缝集成，有效连接研发管理过程中的产品规划、产品开发、产品测试、持续集成、产品发布等流程，帮助团队全面提高研发和交付效率
+                  - listitem [ref=e185]:
+                    - generic [ref=e188]:
+                      - heading "多维自定义能力" [level=4] [ref=e189] [cursor=pointer]
+                      - generic [ref=e190]: 提供了丰富的自定义能力，除了基本的精细化权限控制，还支持对工作项、工作流、项目模型等进行个性化定制，深度匹配团队的项目管理流程
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                      - img "轻简灵活的项目协作"
+                  - list:
+                    - listitem:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img "项目管理全场景"
+                        - generic:
+                          - generic:
+                            - img "项目管理全场景"
+                        - generic:
+                          - generic:
+                            - img "项目管理全场景"
+                    - listitem:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img "研发管理全流程"
+                        - generic:
+                          - generic:
+                            - img "研发管理全流程"
+                        - generic:
+                          - generic:
+                            - img "研发管理全流程"
+                    - listitem:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img "多维自定义能力"
+                        - generic:
+                          - generic:
+                            - img "多维自定义能力"
+                        - generic:
+                          - generic:
+                            - img "多维自定义能力"
+            - generic [ref=e192]:
+              - generic [ref=e193]:
+                - generic [ref=e194]:
+                  - generic [ref=e196]:
+                    - img [ref=e198]
+                    - img "稳定安全的代码管理" [ref=e199]
+                  - heading "稳定安全的代码管理" [level=3] [ref=e200]
+                - list [ref=e201]:
+                  - listitem [ref=e202]:
+                    - generic [ref=e206]:
+                      - heading "可靠的代码存储" [level=4] [ref=e207] [cursor=pointer]
+                      - generic [ref=e208]: 领先的多副本存储架构，代码存储可靠性达到 99.99%，推拉更加稳定、快速，支持自动备份策略，无惧误操作、人为故意损坏导致的仓库数据丢失，也支持第三方仓库一键导入，无缝迁移至 Gitee
+                  - listitem [ref=e209]:
+                    - generic [ref=e213]:
+                      - heading "流畅的在线协作" [level=4] [ref=e214] [cursor=pointer]
+                      - generic [ref=e215]: 基于共享资产治理模式下的研发协作，支持 PR 和 CR 模式，提供便捷规范的代码评审流程。内置强大的静态代码规范、漏洞扫描工具，可以为评审环节提供更全面的代码质量提示和修改建议信息
+                  - listitem [ref=e216]:
+                    - generic [ref=e219]:
+                      - heading "全面的代码管控策略" [level=4] [ref=e220] [cursor=pointer]
+                      - generic [ref=e221]: 支持代码仓库数据管控保护重要资产不允许随意篡改，提供保护分支规则管理以及只读文件管理限制从分支粒度以及文件粒度进行控制，同时能够禁止强制推送以及 GPG 身份校验防止代码被篡改
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                      - img "稳定安全的代码管理"
+                  - list:
+                    - listitem:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img "可靠的代码存储"
+                        - generic:
+                          - generic:
+                            - img "可靠的代码存储"
+                        - generic:
+                          - generic:
+                            - img "可靠的代码存储"
+                    - listitem:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img "流畅的在线协作"
+                        - generic:
+                          - generic:
+                            - img "流畅的在线协作"
+                    - listitem:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img "全面的代码管控策略"
+                        - generic:
+                          - generic:
+                            - img "全面的代码管控策略"
+            - generic [ref=e223]:
+              - generic [ref=e224]:
+                - generic [ref=e225]:
+                  - generic [ref=e227]:
+                    - img [ref=e229]
+                    - img "高度自动化的持续交付" [ref=e230]
+                  - heading "高度自动化的持续交付" [level=3] [ref=e231]
+                - list [ref=e232]:
+                  - listitem [ref=e233]:
+                    - generic [ref=e237]:
+                      - heading "插件生态全覆盖" [level=4] [ref=e238] [cursor=pointer]
+                      - generic [ref=e239]: 提供构建、代码扫描、人工卡点、质量卡点、接口测试、部署等系统内置插件，丰富多样的通用插件，可覆盖 90% 以上研发交付场景，扩展能力极强
+                  - listitem [ref=e240]:
+                    - generic [ref=e244]:
+                      - heading "灵活编排调度" [level=4] [ref=e245] [cursor=pointer]
+                      - generic [ref=e246]: 涵盖流水线的可视化编排、YAML 文件编排，支持手动、自动、定时等多种触发方式，通过灵活的编排调度使每一个插件成为流水线最基础的原子作业任务，让流水线更加灵活易用
+                  - listitem [ref=e247]:
+                    - generic [ref=e250]:
+                      - heading "多云一站式部署" [level=4] [ref=e251] [cursor=pointer]
+                      - generic [ref=e252]: 支持自建机房、局域网、阿里云、腾讯云、华为云等主机资源一键导入，通过跨越公有和私有云平台的混合，实现一键发布多云
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                      - img "高度自动化的持续交付"
+                  - list:
+                    - listitem:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img "插件生态全覆盖"
+                        - generic:
+                          - generic:
+                            - img "插件生态全覆盖"
+                        - generic:
+                          - generic:
+                            - img "插件生态全覆盖"
+                    - listitem:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img "灵活编排调度"
+                        - generic:
+                          - generic:
+                            - img "灵活编排调度"
+                        - generic:
+                          - generic:
+                            - img "灵活编排调度"
+                    - listitem:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img "多云一站式部署"
+                        - generic:
+                          - generic:
+                            - img "多云一站式部署"
+            - generic [ref=e254]:
+              - generic [ref=e255]:
+                - generic [ref=e256]:
+                  - generic [ref=e258]:
+                    - img [ref=e260]
+                    - img "专业的安全保障" [ref=e261]
+                  - heading "专业的安全保障" [level=3] [ref=e262]
+                - list [ref=e263]:
+                  - listitem [ref=e264]:
+                    - generic [ref=e268]:
+                      - heading "精细的权限管理" [level=4] [ref=e269] [cursor=pointer]
+                      - generic [ref=e270]: 多维度、细粒度、严格隔离的自定义权限体系满足各种规模企业在不同场景下对企业数字资产管理和控制的需求，且内置多种常用角色，以供用户快速接入使用
+                  - listitem [ref=e271]:
+                    - generic [ref=e275]:
+                      - heading "完备的安全策略" [level=4] [ref=e276] [cursor=pointer]
+                      - generic [ref=e277]: 比自建系统更安全，通过更精细的访问控制、自定义代码推拉方式、IP 白名单、登录提醒、关键行为二次验证、异常行为监控等措施防范于未然
+                  - listitem [ref=e278]:
+                    - generic [ref=e281]:
+                      - heading "丰富的操作日志" [level=4] [ref=e282] [cursor=pointer]
+                      - generic [ref=e283]: 对企业资产以及平台的一切操作均有动态及日志记录，全方位的日志方便用户追溯和定位在平台使用过程中所发生的问题，助力其企业开展安全审计相关工作
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                      - img "专业的安全保障"
+                  - list:
+                    - listitem:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img "精细的权限管理"
+                        - generic:
+                          - generic:
+                            - img "精细的权限管理"
+                    - listitem:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img "完备的安全策略"
+                        - generic:
+                          - generic:
+                            - img "完备的安全策略"
+                    - listitem:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img "丰富的操作日志"
+                        - generic:
+                          - generic:
+                            - img "丰富的操作日志"
+        - generic [ref=e286]:
+          - generic [ref=e287]:
+            - heading "丰富的行业实践经验" [level=2] [ref=e288]
+            - heading "帮助各行业、各类规模性组织获得数字化转型成功" [level=3] [ref=e289]
+          - generic [ref=e290]:
+            - generic [ref=e293]:
+              - text: “逆境不谈情怀 务实才是本分” —— 2023 GOTC 大会 Gitee 公布付费客户案例超 10000+
+              - link "查看" [ref=e294] [cursor=pointer]:
+                - /url: https://www.bilibili.com/video/BV1ih4y137SM/
+                - text: 查看
+                - img [ref=e295]
+            - generic [ref=e302]:
+              - generic [ref=e304]:
+                - generic [ref=e305]:
+                  - generic [ref=e308]:
+                    - img [ref=e310]
+                    - img "icon" [ref=e311]
+                  - generic [ref=e312]:
+                    - heading "大金融行业" [level=3] [ref=e313]
+                    - generic [ref=e314]: Financial
+                - generic [ref=e316]:
+                  - img [ref=e318]
+                  - img "logo" [ref=e319]
+              - generic [ref=e321]:
+                - generic [ref=e322]:
+                  - generic [ref=e325]:
+                    - img [ref=e327]
+                    - img "icon" [ref=e328]
+                  - generic [ref=e329]:
+                    - heading "大制造行业" [level=3] [ref=e330]
+                    - generic [ref=e331]: Manufacturing
+                - generic [ref=e333]:
+                  - img [ref=e335]
+                  - img "logo" [ref=e336]
+              - generic [ref=e338]:
+                - generic [ref=e339]:
+                  - generic [ref=e342]:
+                    - img [ref=e344]
+                    - img "icon" [ref=e345]
+                  - generic [ref=e346]:
+                    - heading "大健康行业" [level=3] [ref=e347]
+                    - generic [ref=e348]: Health
+                - generic [ref=e350]:
+                  - img [ref=e352]
+                  - img "logo" [ref=e353]
+              - generic [ref=e355]:
+                - generic [ref=e356]:
+                  - generic [ref=e359]:
+                    - img [ref=e361]
+                    - img "icon" [ref=e362]
+                  - generic [ref=e363]:
+                    - heading "互联网/IT" [level=3] [ref=e364]
+                    - generic [ref=e365]: Internet Technology
+                - generic [ref=e367]:
+                  - img [ref=e369]
+                  - img "logo" [ref=e370]
+              - generic [ref=e372]:
+                - generic [ref=e373]:
+                  - generic [ref=e376]:
+                    - img [ref=e378]
+                    - img "icon" [ref=e379]
+                  - generic [ref=e380]:
+                    - heading "国资 • 信创" [level=3] [ref=e381]
+                    - generic [ref=e382]: Domestic Substitution
+                - generic [ref=e384]:
+                  - img [ref=e386]
+                  - img "logo" [ref=e387]
+              - generic [ref=e389]:
+                - generic [ref=e390]:
+                  - generic [ref=e393]:
+                    - img [ref=e395]
+                    - img "icon" [ref=e396]
+                  - generic [ref=e397]:
+                    - heading "科研教育" [level=3] [ref=e398]
+                    - generic [ref=e399]: Scientific Research & Education
+                - generic [ref=e401]:
+                  - img [ref=e403]
+                  - img "logo" [ref=e404]
+              - generic [ref=e406]:
+                - generic [ref=e407]:
+                  - generic [ref=e410]:
+                    - img [ref=e412]
+                    - img "icon" [ref=e413]
+                  - generic [ref=e414]:
+                    - heading "大传媒行业" [level=3] [ref=e415]
+                    - generic [ref=e416]: Media
+                - generic [ref=e418]:
+                  - img [ref=e420]
+                  - img "logo" [ref=e421]
+              - generic [ref=e423]:
+                - generic [ref=e424]:
+                  - generic [ref=e427]:
+                    - img [ref=e429]
+                    - img "icon" [ref=e430]
+                  - generic [ref=e431]:
+                    - heading "大消费行业" [level=3] [ref=e432]
+                    - generic [ref=e433]: Consumer
+                - generic [ref=e435]:
+                  - img [ref=e437]
+                  - img "logo" [ref=e438]
+              - generic [ref=e440]:
+                - generic [ref=e441]:
+                  - generic [ref=e444]:
+                    - img [ref=e446]
+                    - img "icon" [ref=e447]
+                  - generic [ref=e448]:
+                    - heading "大金融行业" [level=3] [ref=e449]
+                    - generic [ref=e450]: Financial
+                - generic [ref=e452]:
+                  - img [ref=e454]
+                  - img "logo" [ref=e455]
+              - generic [ref=e457]:
+                - generic [ref=e458]:
+                  - generic [ref=e461]:
+                    - img [ref=e463]
+                    - img "icon" [ref=e464]
+                  - generic [ref=e465]:
+                    - heading "大制造行业" [level=3] [ref=e466]
+                    - generic [ref=e467]: Manufacturing
+                - generic [ref=e469]:
+                  - img [ref=e471]
+                  - img "logo" [ref=e472]
+              - generic [ref=e474]:
+                - generic [ref=e475]:
+                  - generic [ref=e478]:
+                    - img [ref=e480]
+                    - img "icon" [ref=e481]
+                  - generic [ref=e482]:
+                    - heading "大健康行业" [level=3] [ref=e483]
+                    - generic [ref=e484]: Health
+                - generic [ref=e486]:
+                  - img [ref=e488]
+                  - img "logo" [ref=e489]
+              - generic [ref=e491]:
+                - generic [ref=e492]:
+                  - generic [ref=e495]:
+                    - img [ref=e497]
+                    - img "icon" [ref=e498]
+                  - generic [ref=e499]:
+                    - heading "互联网/IT" [level=3] [ref=e500]
+                    - generic [ref=e501]: Internet Technology
+                - generic [ref=e503]:
+                  - img [ref=e505]
+                  - img "logo" [ref=e506]
+              - generic [ref=e508]:
+                - generic [ref=e509]:
+                  - generic [ref=e512]:
+                    - img [ref=e514]
+                    - img "icon" [ref=e515]
+                  - generic [ref=e516]:
+                    - heading "国资 • 信创" [level=3] [ref=e517]
+                    - generic [ref=e518]: Domestic Substitution
+                - generic [ref=e520]:
+                  - img [ref=e522]
+                  - img "logo" [ref=e523]
+              - generic [ref=e525]:
+                - generic [ref=e526]:
+                  - generic [ref=e529]:
+                    - img [ref=e531]
+                    - img "icon" [ref=e532]
+                  - generic [ref=e533]:
+                    - heading "科研教育" [level=3] [ref=e534]
+                    - generic [ref=e535]: Scientific Research & Education
+                - generic [ref=e537]:
+                  - img [ref=e539]
+                  - img "logo" [ref=e540]
+              - generic [ref=e542]:
+                - generic [ref=e543]:
+                  - generic [ref=e546]:
+                    - img [ref=e548]
+                    - img "icon" [ref=e549]
+                  - generic [ref=e550]:
+                    - heading "大传媒行业" [level=3] [ref=e551]
+                    - generic [ref=e552]: Media
+                - generic [ref=e554]:
+                  - img [ref=e556]
+                  - img "logo" [ref=e557]
+              - generic [ref=e559]:
+                - generic [ref=e560]:
+                  - generic [ref=e563]:
+                    - img [ref=e565]
+                    - img "icon" [ref=e566]
+                  - generic [ref=e567]:
+                    - heading "大消费行业" [level=3] [ref=e568]
+                    - generic [ref=e569]: Consumer
+                - generic [ref=e571]:
+                  - img [ref=e573]
+                  - img "logo" [ref=e574]
+              - generic [ref=e576]:
+                - generic [ref=e577]:
+                  - generic [ref=e580]:
+                    - img [ref=e582]
+                    - img "icon" [ref=e583]
+                  - generic [ref=e584]:
+                    - heading "大金融行业" [level=3] [ref=e585]
+                    - generic [ref=e586]: Financial
+                - generic [ref=e588]:
+                  - img [ref=e590]
+                  - img "logo" [ref=e591]
+              - generic [ref=e593]:
+                - generic [ref=e594]:
+                  - generic [ref=e597]:
+                    - img [ref=e599]
+                    - img "icon" [ref=e600]
+                  - generic [ref=e601]:
+                    - heading "大制造行业" [level=3] [ref=e602]
+                    - generic [ref=e603]: Manufacturing
+                - generic [ref=e605]:
+                  - img [ref=e607]
+                  - img "logo" [ref=e608]
+              - generic [ref=e610]:
+                - generic [ref=e611]:
+                  - generic [ref=e614]:
+                    - img [ref=e616]
+                    - img "icon" [ref=e617]
+                  - generic [ref=e618]:
+                    - heading "大健康行业" [level=3] [ref=e619]
+                    - generic [ref=e620]: Health
+                - generic [ref=e622]:
+                  - img [ref=e624]
+                  - img "logo" [ref=e625]
+              - generic [ref=e627]:
+                - generic [ref=e628]:
+                  - generic [ref=e631]:
+                    - img [ref=e633]
+                    - img "icon" [ref=e634]
+                  - generic [ref=e635]:
+                    - heading "互联网/IT" [level=3] [ref=e636]
+                    - generic [ref=e637]: Internet Technology
+                - generic [ref=e639]:
+                  - img [ref=e641]
+                  - img "logo" [ref=e642]
+              - generic [ref=e644]:
+                - generic [ref=e645]:
+                  - generic [ref=e648]:
+                    - img [ref=e650]
+                    - img "icon" [ref=e651]
+                  - generic [ref=e652]:
+                    - heading "国资 • 信创" [level=3] [ref=e653]
+                    - generic [ref=e654]: Domestic Substitution
+                - generic [ref=e656]:
+                  - img [ref=e658]
+                  - img "logo" [ref=e659]
+              - generic [ref=e661]:
+                - generic [ref=e662]:
+                  - generic [ref=e665]:
+                    - img [ref=e667]
+                    - img "icon" [ref=e668]
+                  - generic [ref=e669]:
+                    - heading "科研教育" [level=3] [ref=e670]
+                    - generic [ref=e671]: Scientific Research & Education
+                - generic [ref=e673]:
+                  - img [ref=e675]
+                  - img "logo" [ref=e676]
+              - generic [ref=e678]:
+                - generic [ref=e679]:
+                  - generic [ref=e682]:
+                    - img [ref=e684]
+                    - img "icon" [ref=e685]
+                  - generic [ref=e686]:
+                    - heading "大传媒行业" [level=3] [ref=e687]
+                    - generic [ref=e688]: Media
+                - generic [ref=e690]:
+                  - img [ref=e692]
+                  - img "logo" [ref=e693]
+              - generic [ref=e695]:
+                - generic [ref=e696]:
+                  - generic [ref=e699]:
+                    - img [ref=e701]
+                    - img "icon" [ref=e702]
+                  - generic [ref=e703]:
+                    - heading "大消费行业" [level=3] [ref=e704]
+                    - generic [ref=e705]: Consumer
+                - generic [ref=e707]:
+                  - img [ref=e709]
+                  - img "logo" [ref=e710]
+            - link "查看更多行业龙头数字化转型实践" [ref=e712] [cursor=pointer]:
+              - /url: /customers
+              - button "查看更多行业龙头数字化转型实践" [ref=e713]:
+                - generic [ref=e714]: 查看更多行业龙头数字化转型实践
+                - img [ref=e715]
+        - generic [ref=e720]:
+          - heading "和 420,000+ 优秀企业一起迈向高效能研发" [level=2] [ref=e722]
+          - generic [ref=e723]:
+            - generic [ref=e724]:
+              - generic [ref=e725]:
+                - generic [ref=e726]:
+                  - generic [ref=e733]: "0"
+                  - generic [ref=e734]: "%"
+                - generic [ref=e735]: 交付效率提升
+              - generic [ref=e736]:
+                - generic [ref=e737]:
+                  - generic [ref=e744]: "0"
+                  - generic [ref=e745]: "%"
+                - generic [ref=e746]: 团队效能提升
+              - generic [ref=e747]:
+                - generic [ref=e748]:
+                  - generic [ref=e755]: "0"
+                  - generic [ref=e756]: "%"
+                - generic [ref=e757]: 响应速度提升
+              - generic [ref=e758]:
+                - generic [ref=e759]:
+                  - generic [ref=e766]: "0"
+                  - generic [ref=e767]: "%"
+                - generic [ref=e768]: 代码安全提升
+            - generic [ref=e769]:
+              - link "企业版免费注册" [ref=e770] [cursor=pointer]:
+                - /url: /enterprises/new?from=gitee.com
+                - button "企业版免费注册" [ref=e771]:
+                  - generic [ref=e772]: 企业版免费注册
+              - button "专业版预约演示" [ref=e774] [cursor=pointer]:
+                - generic [ref=e775]: 专业版预约演示
+          - generic [ref=e776]: "* 数据来源于 Gitee 产品服务团队于 2025.05.20 - 2025.05.30 期间针对 1400 家不同行业企业客户调研结果"
+        - generic [ref=e778]:
+          - heading "更多服务" [level=2] [ref=e780]
+          - generic [ref=e781]:
+            - generic [ref=e782]:
+              - heading "icon-heart Gitee 公益支持计划" [level=4] [ref=e783]:
+                - generic [ref=e784]:
+                  - generic [ref=e786]:
+                    - img [ref=e788]
+                    - img "icon-heart" [ref=e789]
+                  - generic [ref=e790]: Gitee 公益支持计划
+              - article [ref=e791]: 「Gitee 公益支持计划」希望通过为纯公益组织和非盈利机构提供免费的产品及服务支持，帮助他们提升研发效率、降低成本，将更多精力投入公益事业之中。
+              - button "申请公益支持" [ref=e792] [cursor=pointer]:
+                - generic [ref=e793]: 申请公益支持
+            - generic [ref=e794]:
+              - heading "企业咨询与培训" [level=4] [ref=e795]
+              - article [ref=e796]: 提供研发管理咨询、产品使用培训服务，帮助研发团队优化研发过程，快速上手 Git，使用 Gitee 企业版提升工作效率。
+              - button "联系我们" [ref=e797] [cursor=pointer]:
+                - generic [ref=e798]: 联系我们
+      - contentinfo [ref=e799]:
+        - generic [ref=e801]:
+          - generic [ref=e802]:
+            - img [ref=e804]
+            - img "gitee logo" [ref=e805]
+          - paragraph [ref=e806]: 北京奥思研工智能科技有限公司版权所有
+          - generic [ref=e807]:
+            - navigation [ref=e808]:
+              - link "Git 大全" [ref=e809] [cursor=pointer]:
+                - /url: /all-about-git
+              - link "Git 命令学习" [ref=e810] [cursor=pointer]:
+                - /url: https://help.gitee.com/learn-Git-Branching/
+              - link "CopyCat 代码克隆检测" [ref=e811] [cursor=pointer]:
+                - /url: https://copycat.gitee.com/
+              - link "APP与插件下载" [ref=e812] [cursor=pointer]:
+                - /url: /appclient
+            - navigation [ref=e813]:
+              - link "Gitee 封面人物" [ref=e814] [cursor=pointer]:
+                - /url: /gitee-stars
+              - link "GVP 项目" [ref=e815] [cursor=pointer]:
+                - /url: /gvp
+              - link "Gitee 博客" [ref=e816] [cursor=pointer]:
+                - /url: https://blog.gitee.com/
+              - link "Gitee 公益计划" [ref=e817] [cursor=pointer]:
+                - /url: /enterprises#nonprofit-plan
+              - link "Gitee 持续集成" [ref=e818] [cursor=pointer]:
+                - /url: /features/gitee-go
+            - navigation [ref=e819]:
+              - link "OpenAPI" [ref=e820] [cursor=pointer]:
+                - /url: /api/v5/swagger
+              - link "MCP server" [ref=e821] [cursor=pointer]:
+                - /url: https://gitee.com/oschina/mcp-gitee
+              - link "帮助文档" [ref=e822] [cursor=pointer]:
+                - /url: https://help.gitee.com
+              - link "在线自助服务" [ref=e823] [cursor=pointer]:
+                - /url: /self_services
+              - link "更新日志" [ref=e824] [cursor=pointer]:
+                - /url: /help/articles/4378
+            - navigation [ref=e825]:
+              - link "关于我们" [ref=e826] [cursor=pointer]:
+                - /url: /about-us
+              - link "加入我们" [ref=e827] [cursor=pointer]:
+                - /url: /oschina/jobs
+              - link "使用条款" [ref=e828] [cursor=pointer]:
+                - /url: /terms
+              - link "意见建议" [ref=e829] [cursor=pointer]:
+                - /url: /oschina/git-osc/issues
+              - link "合作伙伴" [ref=e830] [cursor=pointer]:
+                - /url: /links.html
+            - navigation [ref=e831]:
+              - link "client@oschina.cn" [ref=e832] [cursor=pointer]:
+                - /url: "mailto: client@oschina.cn"
+                - img [ref=e833]
+                - generic [ref=e837]: client@oschina.cn
+              - link "企业版在线使用：400-606-0201" [ref=e838] [cursor=pointer]:
+                - /url: tel:400-606-0201
+                - img [ref=e839]
+                - text: 企业版在线使用：400-606-0201
+              - generic [ref=e843]:
+                - img [ref=e844]
+                - text: 专业版私有部署：赖经理 13058176526
+            - generic [ref=e848]:
+              - generic [ref=e849]:
+                - img "技术交流QQ群" [ref=e852]
+                - generic [ref=e853]: 技术交流QQ群
+              - generic [ref=e854]:
+                - img "微信服务号" [ref=e857]
+                - generic [ref=e858]: 微信服务号
+        - generic [ref=e859]:
+          - generic [ref=e860]:
+            - generic [ref=e861]:
+              - generic [ref=e862]:
+                - img [ref=e864]
+                - img "开放原子开源基金会" [ref=e865]
+              - link "开放原子开源基金会" [ref=e866] [cursor=pointer]:
+                - /url: https://www.openatom.org/
+              - generic [ref=e867]: 合作代码托管平台
+            - generic [ref=e868]:
+              - generic [ref=e869]:
+                - img [ref=e871]
+                - img "违法和不良信息举报中心" [ref=e872]
+              - link "违法和不良信息举报中心" [ref=e873] [cursor=pointer]:
+                - /url: https://www.12377.cn
+            - generic [ref=e874]:
+              - link "京ICP备2025119063号" [ref=e876] [cursor=pointer]:
+                - /url: http://beian.miit.gov.cn/
+              - generic [ref=e877]:
+                - generic [ref=e878]:
+                  - img [ref=e880]
+                  - img "京公网安备11011502039387号" [ref=e881]
+                - link "京公网安备11011502039387号" [ref=e882] [cursor=pointer]:
+                  - /url: https://beian.mps.gov.cn/#/query/webSearch?code=11011502039387
+          - generic [ref=e883]:
+            - img [ref=e884]
+            - link "中 文" [ref=e888] [cursor=pointer]:
+              - /url: "#"
+            - text: /
+            - link "English" [ref=e889] [cursor=pointer]:
+              - /url: "#"
+    - generic [ref=e890]:
+      - generic [ref=e892] [cursor=pointer]:
+        - generic [ref=e893]:
+          - img [ref=e895]
+          - img "咨询顾问" [ref=e896]
+        - generic [ref=e898]:
+          - img [ref=e900]
+          - img "decorate" [ref=e901]
+        - generic [ref=e903]: 购买咨询
+      - generic [ref=e904] [cursor=pointer]:
+        - generic [ref=e905]:
+          - img [ref=e907]
+          - img "联系方式" [ref=e908]
+        - generic [ref=e909]: 联系方式
+      - generic [ref=e910] [cursor=pointer]:
+        - generic [ref=e911]: 私有化
+        - generic [ref=e912]:
+          - img [ref=e914]
+          - img "预约演示" [ref=e915]
+        - generic [ref=e916]: 预约演示
+  - alert [ref=e917]

@@ -1,0 +1,329 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - text:            
+      - link "Gitee - 基于 Git 的代码托管和研发协作平台" [ref=e6] [cursor=pointer]:
+        - /url: https://gitee.com
+        - img "Gitee - 基于 Git 的代码托管和研发协作平台" [ref=e7]
+      - link "开源" [ref=e8] [cursor=pointer]:
+        - /url: /explore
+      - link "企业版" [ref=e9] [cursor=pointer]:
+        - /url: /enterprises
+      - link "高校版" [ref=e10] [cursor=pointer]:
+        - /url: /education
+      - link "私有云" [ref=e11] [cursor=pointer]:
+        - /url: https://gitee.cn?utm_source=giteecom
+      - link "模力方舟 模力方舟" [ref=e12] [cursor=pointer]:
+        - /url: https://moark.com/serverless-api/?utm_sources=site_nav
+        - text: 模力方舟
+        - img "模力方舟" [ref=e13]
+      - link "AI 队友" [ref=e14] [cursor=pointer]:
+        - /url: https://gitee.com/ai-teammates
+      - generic [ref=e15] [cursor=pointer]:
+        - link "我的" [ref=e16]:
+          - /url: /
+        - img [ref=e17]
+      - generic [ref=e21]:
+        - generic [ref=e23]:
+          - textbox "搜开源" [ref=e24]
+          - img
+        - link [ref=e25] [cursor=pointer]:
+          - /url: https://chat.gitee.com/
+          - img [ref=e26]
+        - link [ref=e29] [cursor=pointer]:
+          - /url: /notifications
+          - img [ref=e30]
+        - generic [ref=e34] [cursor=pointer]:
+          - img [ref=e35]
+          - text:     
+        - generic [ref=e39] [cursor=pointer]:
+          - img "许丹-xu-cindy" [ref=e40]
+          - img [ref=e41]
+          - text:       
+  - generic [ref=e45]:
+    - generic [ref=e46]:
+      - generic:  
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - text: 
+          - link "richgiteeai" [ref=e53] [cursor=pointer]:
+            - /url: https://chat.gitee.com?repo_owner=xu-cindy&repo_path=dragon-boat-festival
+            - img "richgiteeai" [ref=e54]
+          - generic [ref=e55]:
+            - generic [ref=e56] [cursor=pointer]:
+              - generic [ref=e57]: 
+              - generic [ref=e58]: Watching
+              - generic [ref=e59]: 
+              - text: 
+            - link "1" [ref=e60] [cursor=pointer]:
+              - /url: /xu-cindy/dragon-boat-festival/watchers
+          - generic [ref=e61]:
+            - text: 
+            - link " Star" [ref=e62] [cursor=pointer]:
+              - /url: /xu-cindy/dragon-boat-festival/star
+              - generic [ref=e63]: 
+              - text: Star
+            - link "0" [ref=e64] [cursor=pointer]:
+              - /url: /xu-cindy/dragon-boat-festival/stargazers
+          - generic [ref=e65]:
+            - link " Fork" [ref=e66] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e67]: 
+              - text: Fork
+            - link "0" [ref=e68] [cursor=pointer]:
+              - /url: /xu-cindy/dragon-boat-festival/members
+        - heading " 许丹 / dragon-boat-festival " [level=2] [ref=e69]:
+          - generic [ref=e70]:
+            - generic "这是一个公开仓库" [ref=e71]: 
+            - link "许丹" [ref=e72] [cursor=pointer]:
+              - /url: /xu-cindy
+            - text: /
+            - link "dragon-boat-festival" [ref=e73] [cursor=pointer]:
+              - /url: /xu-cindy/dragon-boat-festival
+          - link "" [ref=e75] [cursor=pointer]:
+            - /url: /xu-cindy/dragon-boat-festival/recomm_self
+            - generic [ref=e76]: 
+      - generic [ref=e79]:
+        - link " 代码" [ref=e80] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival
+          - generic [ref=e81]: 
+          - text: 代码
+        - link " Issues 0" [ref=e82] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival/issues
+          - generic [ref=e83]: 
+          - text: Issues
+          - generic [ref=e84]: "0"
+        - link " Pull Requests 0" [ref=e85] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival/pulls
+          - generic [ref=e86]: 
+          - text: Pull Requests
+          - generic [ref=e87]: "0"
+        - link " Wiki" [ref=e88] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival/wikis
+          - generic [ref=e89]: 
+          - text: Wiki
+        - link " 统计" [ref=e90] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival/repository/stats/master
+          - generic [ref=e91]: 
+          - text: 统计
+        - link " 流水线" [ref=e92] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival/gitee_go
+          - generic [ref=e93]: 
+          - text: 流水线
+        - generic [ref=e96] [cursor=pointer]:
+          - generic [ref=e97]: 
+          - text: 服务
+          - generic [ref=e98]: 
+        - link " 管理" [ref=e99] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival/settings
+          - generic [ref=e100]: 
+          - generic [ref=e101]: 管理
+    - generic [ref=e103]:
+      - generic [ref=e105]:
+        - generic [ref=e106] [cursor=pointer]:
+          - generic [ref=e107]: 
+          - text: 仓库设置
+        - generic [ref=e108]:
+          - link "基本信息" [ref=e109] [cursor=pointer]:
+            - /url: /xu-cindy/dragon-boat-festival/settings#index
+          - link "功能设置" [ref=e110] [cursor=pointer]:
+            - /url: /xu-cindy/dragon-boat-festival/settings#function
+          - link "仓库状态" [ref=e111] [cursor=pointer]:
+            - /url: /xu-cindy/dragon-boat-festival/settings#status
+          - link "转移仓库" [ref=e112] [cursor=pointer]:
+            - /url: /xu-cindy/dragon-boat-festival/settings#transfer
+          - link "清空仓库" [ref=e113] [cursor=pointer]:
+            - /url: /xu-cindy/dragon-boat-festival/settings#clear
+          - link "存储库 GC" [ref=e114] [cursor=pointer]:
+            - /url: /xu-cindy/dragon-boat-festival/settings#git-gc
+          - link "删除仓库" [ref=e115] [cursor=pointer]:
+            - /url: /xu-cindy/dragon-boat-festival/settings#remove
+          - link "代码审查设置" [ref=e116] [cursor=pointer]:
+            - /url: /xu-cindy/dragon-boat-festival/settings/review-rules
+          - link "百度统计设置" [ref=e117] [cursor=pointer]:
+            - /url: /xu-cindy/dragon-boat-festival/settings#hm
+        - link "仓库镜像管理" [ref=e119] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival/mirrors
+        - link "开源评估指数" [ref=e121] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival/compass
+        - generic [ref=e122] [cursor=pointer]:
+          - generic [ref=e123]: 
+          - text: 仓库成员管理
+        - generic [ref=e124] [cursor=pointer]:
+          - generic [ref=e125]: 
+          - text: 部署公钥管理
+        - text:  
+        - link "仓库挂件" [ref=e127] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival/widget
+        - link "WebHooks" [ref=e129] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival/hooks
+        - link "只读文件管理" [ref=e131] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival/readonly/list
+        - link "保护分支设置" [ref=e133] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival/branches/setting
+        - link "保护标签设置" [ref=e136] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival/tag_rules
+        - link "推送规则设置" [ref=e138] [cursor=pointer]:
+          - /url: /xu-cindy/dragon-boat-festival/push_config
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - heading "基本信息" [level=3] [ref=e141]
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - generic [ref=e146]: 仓库名称 *
+              - textbox "仓库名称 *" [ref=e147]:
+                - /placeholder: Example Project
+                - text: dragon-boat-festival
+            - generic [ref=e148]:
+              - generic [ref=e149]:
+                - generic [ref=e150]: 路径 *
+                - generic [ref=e151]: 路径 (请注意：仓库路径即仓库访问 URL 地址，更改仓库路径将导致原克隆地址不可用)
+              - generic [ref=e153]:
+                - generic "https://gitee.com/xu-cindy/" [ref=e154]
+                - textbox "路径 * 路径 (请注意：仓库路径即仓库访问 URL 地址，更改仓库路径将导致原克隆地址不可用)" [ref=e155]:
+                  - /placeholder: Example Project Path
+                  - text: dragon-boat-festival
+            - generic [ref=e156]:
+              - generic [ref=e157]: 介绍
+              - textbox "介绍" [ref=e158]:
+                - /placeholder: 用简短的语言来描述一下吧
+                - text: dragon-boat-festival
+            - generic [ref=e159]:
+              - generic [ref=e160]: 主页
+              - textbox "主页" [ref=e161]:
+                - /placeholder: 输入一个有效的 http 链接
+            - generic [ref=e162]:
+              - generic [ref=e163]: 语言
+              - generic [ref=e164] [cursor=pointer]:
+                - generic [ref=e165]: 
+                - textbox [ref=e166]
+                - generic [ref=e167]: 请选择语言
+            - generic [ref=e168]:
+              - generic [ref=e169]: 默认分支
+              - generic [ref=e170] [cursor=pointer]:
+                - generic [ref=e171]: 
+                - textbox [ref=e172]
+                - generic [ref=e173]: master
+            - generic [ref=e174]:
+              - generic [ref=e176]: 是否开源
+              - generic [ref=e178]:
+                - radio [checked] [ref=e179]
+                - generic [ref=e180] [cursor=pointer]:
+                  - generic [ref=e181]: 开源
+                  - generic [ref=e182]: （所有人可见）
+              - generic [ref=e184]:
+                - radio [ref=e185]
+                - generic [ref=e186] [cursor=pointer]:
+                  - generic [ref=e187]: 私有
+                  - generic [ref=e188]: （仅仓库成员可见）
+              - text:   
+              - generic [ref=e189]:
+                - text: 为保障你的合法权益，请点此
+                - strong [ref=e190]: 选择
+                - text: 合适的开源许可证
+            - button "保存" [ref=e192] [cursor=pointer]
+        - text:                                    
+  - text:  
+  - contentinfo [ref=e193]:
+    - generic [ref=e194]:
+      - link "Gitee - 基于 Git 的代码托管和研发协作平台" [ref=e196] [cursor=pointer]:
+        - /url: https://gitee.com
+        - img "Gitee - 基于 Git 的代码托管和研发协作平台" [ref=e197]
+      - generic [ref=e198]: 北京奥思研工智能科技有限公司版权所有
+      - generic [ref=e199]:
+        - generic [ref=e201]:
+          - generic [ref=e203]:
+            - link "Git 大全" [ref=e205] [cursor=pointer]:
+              - /url: /all-about-git
+            - link "Git 命令学习" [ref=e207] [cursor=pointer]:
+              - /url: https://help.gitee.com/learn-Git-Branching/
+            - link "CopyCat 代码克隆检测" [ref=e209] [cursor=pointer]:
+              - /url: https://copycat.gitee.com/
+            - link "APP与插件下载" [ref=e211] [cursor=pointer]:
+              - /url: /appclient
+          - generic [ref=e213]:
+            - link "Gitee 封面人物" [ref=e215] [cursor=pointer]:
+              - /url: /gitee-stars
+            - link "GVP 项目" [ref=e217] [cursor=pointer]:
+              - /url: /gvp
+            - link "Gitee 博客" [ref=e219] [cursor=pointer]:
+              - /url: https://blog.gitee.com/
+            - link "Gitee 公益计划" [ref=e221] [cursor=pointer]:
+              - /url: /enterprises#nonprofit-plan
+            - link "Gitee 持续集成" [ref=e223] [cursor=pointer]:
+              - /url: https://gitee.com/features/gitee-go
+          - generic [ref=e225]:
+            - link "OpenAPI" [ref=e227] [cursor=pointer]:
+              - /url: /api/v5/swagger
+            - link "MCP Server" [ref=e229] [cursor=pointer]:
+              - /url: https://gitee.com/oschina/mcp-gitee
+            - link "帮助文档" [ref=e231] [cursor=pointer]:
+              - /url: https://help.gitee.com
+            - link "在线自助服务" [ref=e233] [cursor=pointer]:
+              - /url: /self_services
+            - link "更新日志" [ref=e235] [cursor=pointer]:
+              - /url: /help/articles/4378
+          - generic [ref=e237]:
+            - link "关于我们" [ref=e239] [cursor=pointer]:
+              - /url: /about_us
+            - link "加入我们" [ref=e241] [cursor=pointer]:
+              - /url: " https://gitee.com/oschina/jobs"
+            - link "使用条款" [ref=e243] [cursor=pointer]:
+              - /url: /terms
+            - link "意见建议" [ref=e245] [cursor=pointer]:
+              - /url: /oschina/git-osc/issues
+            - link "合作伙伴" [ref=e247] [cursor=pointer]:
+              - /url: /links.html
+        - generic [ref=e248]:
+          - generic [ref=e249]:
+            - img "技术交流QQ群" [ref=e251]
+            - paragraph [ref=e252]: 技术交流QQ群
+          - generic [ref=e253]:
+            - img "微信服务号" [ref=e255]
+            - paragraph [ref=e256]: 微信服务号
+          - generic [ref=e258]:
+            - link " client@oschina.cn" [ref=e260] [cursor=pointer]:
+              - /url: "mailto: client@oschina.cn"
+              - generic [ref=e261]: 
+              - text: client@oschina.cn
+            - generic [ref=e263] [cursor=pointer]:
+              - generic [ref=e264]: 
+              - text: 企业版在线使用：400-606-0201
+            - generic [ref=e266] [cursor=pointer]:
+              - generic [ref=e267]: 
+              - generic [ref=e268]: 专业版私有部署：
+              - generic [ref=e269]: 赖经理 13058176526
+    - generic [ref=e272]:
+      - generic [ref=e273]:
+        - generic [ref=e274]:
+          - img "开放原子开源基金会" [ref=e275]
+          - link "开放原子开源基金会" [ref=e276] [cursor=pointer]:
+            - /url: https://www.openatom.org/
+          - generic [ref=e277]: 合作代码托管平台
+        - generic [ref=e278]:
+          - img "违法和不良信息举报中心" [ref=e279]
+          - link "违法和不良信息举报中心" [ref=e280] [cursor=pointer]:
+            - /url: https://www.12377.cn
+        - link "京ICP备2025119063号" [ref=e282] [cursor=pointer]:
+          - /url: http://beian.miit.gov.cn/
+        - generic [ref=e283]:
+          - img "京公网安备11011502039387号" [ref=e284]
+          - link "京公网安备11011502039387号" [ref=e285] [cursor=pointer]:
+            - /url: https://beian.mps.gov.cn/#/query/webSearch?code=11011502039387
+      - generic [ref=e286]:
+        - generic [ref=e287]: 
+        - link "简 体" [ref=e288] [cursor=pointer]:
+          - /url: /language/zh-CN
+        - text: /
+        - link "繁 體" [ref=e289] [cursor=pointer]:
+          - /url: /language/zh-TW
+        - text: /
+        - link "English" [ref=e290] [cursor=pointer]:
+          - /url: /language/en
+  - generic [ref=e291]:
+    - generic [ref=e293] [cursor=pointer]: 
+    - text:    
+    - generic [ref=e295] [cursor=pointer]: 
+    - generic [ref=e297] [cursor=pointer]: 
+  - text:  
+  - status [ref=e298]

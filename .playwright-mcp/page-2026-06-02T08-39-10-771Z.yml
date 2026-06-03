@@ -1,0 +1,24 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - img
+  - generic:
+    - generic: 🍙
+    - generic: 🌿
+    - generic: 🍂
+    - generic: 🐲
+    - generic: 🌿
+    - generic: 🌿
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: 粽情端午 · 智趣同行
+      - generic [ref=e5]: 技服数据中台开发部 2026端午活动
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: 🎋 五月初五 · 端午安康
+        - img "AI绘梦·粽情告白" [ref=e11]
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]: 端午祝福语
+          - textbox "写下你的端午祝福" [ref=e15]
+          - generic [ref=e16]: 0 / 100
+        - button "✨ 生成专属祝福海报" [ref=e17] [cursor=pointer]

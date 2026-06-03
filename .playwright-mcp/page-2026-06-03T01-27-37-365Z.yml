@@ -1,0 +1,191 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner "Global Navigation Menu" [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - button "Open menu" [ref=e12] [cursor=pointer]:
+            - img [ref=e13]
+          - link "Homepage (g then d)" [ref=e15] [cursor=pointer]:
+            - /url: /
+            - img [ref=e16]
+        - generic [ref=e18]:
+          - navigation "Breadcrumbs" [ref=e19]:
+            - list [ref=e20]:
+              - listitem [ref=e21]:
+                - link "cindyforever" [ref=e22] [cursor=pointer]:
+                  - /url: /cindyforever
+                  - generic [ref=e23]: cindyforever
+              - listitem [ref=e24]:
+                - link "dragon-boat-festival" [ref=e25] [cursor=pointer]:
+                  - /url: /cindyforever/dragon-boat-festival
+                  - generic [ref=e26]: dragon-boat-festival
+          - button "Search or jump to…" [ref=e29] [cursor=pointer]:
+            - generic [ref=e30]:
+              - generic:
+                - img
+              - generic [ref=e31]:
+                - generic:
+                  - text: Type
+                  - generic: /
+                  - text: to search
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - generic [ref=e36]:
+              - link "Chat with Copilot" [ref=e38] [cursor=pointer]:
+                - /url: /copilot
+                - img [ref=e39]
+              - button "Open Copilot…" [ref=e43] [cursor=pointer]:
+                - generic:
+                  - img
+            - button "Create new..." [ref=e45] [cursor=pointer]:
+              - generic [ref=e46]:
+                - generic:
+                  - img
+              - generic:
+                - img
+            - generic [ref=e47]:
+              - link "All issues" [ref=e48] [cursor=pointer]:
+                - /url: /issues
+                - img [ref=e49]
+              - link "All pull requests" [ref=e52] [cursor=pointer]:
+                - /url: /pulls
+                - img [ref=e53]
+              - link "All repositories" [ref=e55] [cursor=pointer]:
+                - /url: /repos
+                - img [ref=e56]
+          - link "You have no unread notifications (g then n)" [ref=e58] [cursor=pointer]:
+            - /url: /notifications
+            - img [ref=e59]
+          - button "Open user navigation menu" [ref=e62] [cursor=pointer]:
+            - img "User avatar" [ref=e63]
+      - heading "Repository navigation" [level=2] [ref=e64]
+      - navigation "Repository" [ref=e65]:
+        - list [ref=e66]:
+          - listitem [ref=e67]:
+            - link "Code" [ref=e68] [cursor=pointer]:
+              - /url: /cindyforever/dragon-boat-festival
+              - img [ref=e70]
+              - generic [ref=e72]: Code
+          - listitem [ref=e73]:
+            - link "Issues" [ref=e74] [cursor=pointer]:
+              - /url: /cindyforever/dragon-boat-festival/issues
+              - img [ref=e76]
+              - generic [ref=e79]: Issues
+          - listitem [ref=e80]:
+            - link "Pull requests" [ref=e81] [cursor=pointer]:
+              - /url: /cindyforever/dragon-boat-festival/pulls
+              - img [ref=e83]
+              - generic [ref=e85]: Pull requests
+          - listitem [ref=e86]:
+            - link "Actions" [ref=e87] [cursor=pointer]:
+              - /url: /cindyforever/dragon-boat-festival/actions
+              - img [ref=e89]
+              - generic [ref=e91]: Actions
+          - listitem [ref=e92]:
+            - link "Projects" [ref=e93] [cursor=pointer]:
+              - /url: /cindyforever/dragon-boat-festival/projects
+              - img [ref=e95]
+              - generic [ref=e97]: Projects
+          - listitem [ref=e98]:
+            - link "Wiki" [ref=e99] [cursor=pointer]:
+              - /url: /cindyforever/dragon-boat-festival/wiki
+              - img [ref=e101]
+              - generic [ref=e103]: Wiki
+          - listitem [ref=e104]:
+            - link "Security and quality" [ref=e105] [cursor=pointer]:
+              - /url: /cindyforever/dragon-boat-festival/security
+              - img [ref=e107]
+              - generic [ref=e109]: Security and quality
+          - listitem [ref=e110]:
+            - link "Insights" [ref=e111] [cursor=pointer]:
+              - /url: /cindyforever/dragon-boat-festival/pulse
+              - img [ref=e113]
+              - generic [ref=e115]: Insights
+          - listitem [ref=e116]:
+            - link "Settings" [ref=e117] [cursor=pointer]:
+              - /url: /cindyforever/dragon-boat-festival/settings
+              - img [ref=e119]
+              - generic [ref=e121]: Settings
+  - main [ref=e125]:
+    - generic [ref=e128]:
+      - heading "Uploading files to dragon-boat-festival" [level=1] [ref=e129]
+      - generic [ref=e130]:
+        - heading "Breadcrumbs" [level=2] [ref=e131]
+        - generic [ref=e132]:
+          - link "dragon-boat-festival" [ref=e135] [cursor=pointer]:
+            - /url: /cindyforever/dragon-boat-festival/upload/main
+          - text: /
+      - heading "Upload files" [level=2] [ref=e136]
+      - generic [ref=e139]:
+        - img [ref=e141]
+        - generic [ref=e143]: Drag files here to add them to your repository
+        - paragraph [ref=e144]:
+          - text: Or
+          - button "Choose your files" [ref=e145] [cursor=pointer]
+          - generic [ref=e146] [cursor=pointer]: choose your files
+      - generic [ref=e147]:
+        - img "@cindyforever" [ref=e148]
+        - generic [ref=e149]:
+          - heading "Commit changes" [level=3] [ref=e150]
+          - generic [ref=e151]: Commit summary
+          - textbox "Commit summary" [ref=e152]:
+            - /placeholder: Add files via upload
+          - generic [ref=e153]: Optional extended description
+          - textbox "Optional extended description" [ref=e154]:
+            - /placeholder: Add an optional extended description…
+          - radiogroup "Commit choice" [ref=e155]:
+            - generic [ref=e157]:
+              - radio "Commit directly to the main branch." [checked] [ref=e158]
+              - img [ref=e159]
+              - text: Commit directly to the
+              - strong [ref=e161]: main
+              - text: branch.
+            - generic [ref=e163]:
+              - radio "Create a new branch for this commit and start a pull request. Learn more about pull requests." [ref=e164]
+              - img [ref=e165]
+              - text: Create a
+              - strong [ref=e167]: new branch
+              - text: for this commit and start a pull request.
+              - link "Learn more about pull requests." [ref=e168] [cursor=pointer]:
+                - /url: https://docs.github.com/articles/using-pull-requests
+        - button "Commit changes" [ref=e169] [cursor=pointer]
+        - link "Cancel" [ref=e170] [cursor=pointer]:
+          - /url: /cindyforever/dragon-boat-festival
+  - contentinfo [ref=e171]:
+    - heading "Footer" [level=2] [ref=e172]
+    - generic [ref=e173]:
+      - generic [ref=e174]:
+        - link "GitHub Homepage" [ref=e175] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e176]
+        - generic [ref=e178]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e179]:
+        - heading "Footer navigation" [level=3] [ref=e180]
+        - list "Footer navigation" [ref=e181]:
+          - listitem [ref=e182]:
+            - link "Terms" [ref=e183] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e184]:
+            - link "Privacy" [ref=e185] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e186]:
+            - link "Security" [ref=e187] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e188]:
+            - link "Status" [ref=e189] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e190]:
+            - link "Community" [ref=e191] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e192]:
+            - link "Docs" [ref=e193] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e194]:
+            - link "Contact" [ref=e195] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e196]:
+            - button "Manage cookies" [ref=e198] [cursor=pointer]
+          - listitem [ref=e199]:
+            - button "Do not share my personal information" [ref=e201] [cursor=pointer]

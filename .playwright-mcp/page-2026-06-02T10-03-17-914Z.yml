@@ -1,0 +1,93 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img [ref=e7]
+      - link "开源" [ref=e8] [cursor=pointer]:
+        - /url: /explore
+      - link "企业版" [ref=e9] [cursor=pointer]:
+        - /url: /enterprises
+      - link "高校版" [ref=e10] [cursor=pointer]:
+        - /url: /education
+      - link "私有云" [ref=e11] [cursor=pointer]:
+        - /url: https://gitee.cn?utm_source=giteecom
+      - link "模力方舟 模力方舟" [ref=e12] [cursor=pointer]:
+        - /url: https://moark.com/serverless-api
+        - text: 模力方舟
+        - img "模力方舟" [ref=e13]
+      - link "AI 队友" [ref=e14] [cursor=pointer]:
+        - /url: https://gitee.com/ai-teammates
+      - generic [ref=e18]:
+        - textbox "搜索项目" [ref=e19]
+        - generic [ref=e20] [cursor=pointer]: 
+  - generic [ref=e23]:
+    - img [ref=e25]
+    - heading "你所访问的页面不存在！" [level=3] [ref=e26]
+    - paragraph [ref=e27]:
+      - text: 资源不存在或者没有访问权限，
+      - link "点击这里" [ref=e28] [cursor=pointer]:
+        - /url: /
+      - text: 返回首页
+  - contentinfo [ref=e29]:
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - paragraph [ref=e33]:
+          - link "© Gitee.com" [ref=e34] [cursor=pointer]:
+            - /url: /
+        - generic [ref=e35]:
+          - generic [ref=e37]:
+            - link "关于我们" [ref=e39] [cursor=pointer]:
+              - /url: /about_us
+            - link "使用条款" [ref=e41] [cursor=pointer]:
+              - /url: /terms
+            - link "意见建议" [ref=e43] [cursor=pointer]:
+              - /url: /oschina/git-osc/issues
+            - link "合作伙伴" [ref=e45] [cursor=pointer]:
+              - /url: /links.html
+          - generic [ref=e47]:
+            - link "Git 大全" [ref=e49] [cursor=pointer]:
+              - /url: /all-about-git
+            - link "Git 命令学习" [ref=e51] [cursor=pointer]:
+              - /url: https://help.gitee.com/learn-Git-Branching
+            - link "代码克隆检测" [ref=e53] [cursor=pointer]:
+              - /url: https://copycat.gitee.com
+            - link "APP 与插件下载" [ref=e55] [cursor=pointer]:
+              - /url: /appclient
+          - generic [ref=e57]:
+            - link "Gitee 封面人物" [ref=e59] [cursor=pointer]:
+              - /url: /gitee-stars
+            - link "GVP 项目" [ref=e61] [cursor=pointer]:
+              - /url: /gvp
+            - link "Gitee 博客" [ref=e63] [cursor=pointer]:
+              - /url: https://blog.gitee.com
+          - generic [ref=e65]:
+            - link "OpenAPI" [ref=e67] [cursor=pointer]:
+              - /url: /api/v5/swagger
+            - link "MCP Server" [ref=e69] [cursor=pointer]:
+              - /url: https://gitee.com/oschina/mcp-gitee
+            - link "帮助文档" [ref=e71] [cursor=pointer]:
+              - /url: https://help.gitee.com
+            - link "在线自助服务" [ref=e73] [cursor=pointer]:
+              - /url: /self_services
+            - link "更新日志" [ref=e75] [cursor=pointer]:
+              - /url: /git-osc
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - img "Qrcode-weixin" [ref=e78]
+          - paragraph [ref=e79]: 微信服务号
+        - generic [ref=e81]:
+          - link " 官方技术交流 QQ 群：515965326" [ref=e83] [cursor=pointer]:
+            - /url: //qm.qq.com/cgi-bin/qm/qr?k=OUfztMuf7jElTIf78lMuNT_D_lZYOWnd
+            - generic [ref=e84]: 
+            - text: 官方技术交流 QQ 群：515965326
+          - generic [ref=e85]:
+            - link " git@oschina.cn" [ref=e86] [cursor=pointer]:
+              - /url: "mailto: git@oschina.cn"
+              - generic [ref=e87]: 
+              - text: git@oschina.cn
+            - link " Gitee" [ref=e88] [cursor=pointer]:
+              - /url: https://www.zhihu.com/org/ma-yun-osc/
+              - generic [ref=e89]: 
+              - text: Gitee
+          - generic [ref=e90]: 企业版售前及售后使用咨询：400-606-0201

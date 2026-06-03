@@ -1,0 +1,11 @@
+[   19406ms] [ERROR] Docusaurus React Root onRecoverableError: Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ha (https://help.gitee.com/assets/js/main.d38abbad.js:2:206672)
+    at oc (https://help.gitee.com/assets/js/main.d38abbad.js:2:256059)
+    at pp (https://help.gitee.com/assets/js/main.d38abbad.js:2:294039)
+    at lp (https://help.gitee.com/assets/js/main.d38abbad.js:2:294011)
+    at https://help.gitee.com/assets/js/main.d38abbad.js:2:289124
+    at Zl (https://help.gitee.com/assets/js/main.d38abbad.js:2:289222)
+    at Fp (https://help.gitee.com/assets/js/main.d38abbad.js:2:305099)
+    at MessagePort.S (https://help.gitee.com/assets/js/main.d38abbad.js:2:4080) {componentStack: 
+    at div (<anonymous>)
+    at rr (https://help.…p.gitee.com/assets/js/main.d38abbad.js:2:1232397)} @ https://help.gitee.com/assets/js/main.d38abbad.js:1

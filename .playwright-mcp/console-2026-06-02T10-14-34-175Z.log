@@ -1,0 +1,18 @@
+[    2412ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://e-assets.gitee.com/gitee-community-web/_next/static/media/Alimama_ShuHeiTi_Bold.a85db6b6.ttf @ https://gitee.com/enterprises:0
+[    8505ms] [LOG] %c
+   ██████╗ ██╗████████╗███████╗███████╗
+  ██  ═══╝ ██║╚══██ ══╝██ ════╝██ ════╝
+  ██║  ███╗██║   ██║   █████╗  █████╗
+  ██║   ██║██║   ██║   ██ ══╝  ██ ══╝
+  ╚██████╔╝██║   ██║   ███████╗███████╗
+   ╚═════╝ ╚═╝   ╚═╝   ╚══════╝╚══════╝
+
+ Gitee Community release v0.16.14-community color: #bada55; @ https://e-assets.gitee.com/gitee-community-web/_next/static/chunks/7b26635211fb46e2.js:2
+[   12418ms] [LOG] {"msg":"操作成功","code":200,"event_id":"2061753381639331840"} @ https://e-assets.gitee.com/gitee-community-web/_next/static/chunks/7b26635211fb46e2.js:2
+[   16368ms] [LOG] {"msg":"操作成功","code":200,"event_id":"2061753381639331840"} @ https://e-assets.gitee.com/gitee-community-web/_next/static/chunks/7b26635211fb46e2.js:2
+[   21364ms] [LOG] {"msg":"操作成功","code":200,"event_id":"2061753381639331840"} @ https://e-assets.gitee.com/gitee-community-web/_next/static/chunks/7b26635211fb46e2.js:2
+[   26361ms] [LOG] {"msg":"操作成功","code":200,"event_id":"2061753381639331840"} @ https://e-assets.gitee.com/gitee-community-web/_next/static/chunks/7b26635211fb46e2.js:2
+[   31390ms] [LOG] {"msg":"操作成功","code":200,"event_id":"2061753381639331840"} @ https://e-assets.gitee.com/gitee-community-web/_next/static/chunks/7b26635211fb46e2.js:2
+[   36377ms] [LOG] {"msg":"操作成功","code":200,"event_id":"2061753381639331840"} @ https://e-assets.gitee.com/gitee-community-web/_next/static/chunks/7b26635211fb46e2.js:2
+[   41378ms] [LOG] {"msg":"操作成功","code":200,"event_id":"2061753381639331840"} @ https://e-assets.gitee.com/gitee-community-web/_next/static/chunks/7b26635211fb46e2.js:2
+[   46493ms] [LOG] {"msg":"操作成功","code":200,"event_id":"2061753381639331840"} @ https://e-assets.gitee.com/gitee-community-web/_next/static/chunks/7b26635211fb46e2.js:2

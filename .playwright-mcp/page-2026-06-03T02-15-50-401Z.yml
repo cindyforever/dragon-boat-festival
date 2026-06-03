@@ -1,0 +1,22 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4] [cursor=pointer]: 🎋
+    - generic [ref=e5] [cursor=pointer]: 🍃
+    - generic [ref=e6] [cursor=pointer]: 🚣
+    - generic [ref=e7] [cursor=pointer]: 🫔
+    - generic [ref=e8] [cursor=pointer]: 🏮
+  - img "端午主题" [ref=e10]
+  - generic [ref=e11]:
+    - heading "粽情端午 · 智趣同行" [level=1] [ref=e12]
+    - paragraph [ref=e13]: 服务与软件研发管理部上研分部 2026端午活动
+  - generic [ref=e15]: 🎋 五月初五 · 端午安康
+  - generic [ref=e16]:
+    - generic [ref=e17]: —— 服务与软件研发管理部上研分部端午祝福
+    - generic [ref=e18]: 端午安康
+  - button "💬 我也要送祝福" [ref=e20] [cursor=pointer]
+  - generic [ref=e21]:
+    - generic [ref=e22] [cursor=pointer]: 🎋
+    - generic [ref=e23] [cursor=pointer]: 🍃
+    - generic [ref=e24] [cursor=pointer]: 💰
+    - generic [ref=e25] [cursor=pointer]: 🌟
+    - generic [ref=e26] [cursor=pointer]: 🐉

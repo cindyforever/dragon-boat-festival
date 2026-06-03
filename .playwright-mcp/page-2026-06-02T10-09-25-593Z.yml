@@ -1,0 +1,247 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - text:            
+      - link "Gitee - 基于 Git 的代码托管和研发协作平台" [ref=e6] [cursor=pointer]:
+        - /url: https://gitee.com
+        - img "Gitee - 基于 Git 的代码托管和研发协作平台" [ref=e7]
+      - link "开源" [ref=e8] [cursor=pointer]:
+        - /url: /explore
+      - link "企业版" [ref=e9] [cursor=pointer]:
+        - /url: /enterprises
+      - link "高校版" [ref=e10] [cursor=pointer]:
+        - /url: /education
+      - link "私有云" [ref=e11] [cursor=pointer]:
+        - /url: https://gitee.cn?utm_source=giteecom
+      - link "模力方舟 模力方舟" [ref=e12] [cursor=pointer]:
+        - /url: https://moark.com/serverless-api/?utm_sources=site_nav
+        - text: 模力方舟
+        - img "模力方舟" [ref=e13]
+      - link "AI 队友" [ref=e14] [cursor=pointer]:
+        - /url: https://gitee.com/ai-teammates
+      - generic [ref=e15] [cursor=pointer]:
+        - link "我的" [ref=e16]:
+          - /url: /
+        - img [ref=e17]
+      - generic [ref=e21]:
+        - generic [ref=e23]:
+          - textbox "搜开源" [ref=e24]
+          - img
+        - link [ref=e25] [cursor=pointer]:
+          - /url: https://chat.gitee.com/
+          - img [ref=e26]
+        - link [ref=e29] [cursor=pointer]:
+          - /url: /notifications
+          - img [ref=e30]
+        - generic [ref=e34] [cursor=pointer]:
+          - img [ref=e35]
+          - text:     
+        - generic [ref=e39] [cursor=pointer]:
+          - img "许丹-xu-cindy" [ref=e40]
+          - img [ref=e41]
+          - text:       
+  - generic [ref=e47]:
+    - generic [ref=e49]:
+      - img "许丹-xu-cindy" [ref=e51]
+      - generic [ref=e52]:
+        - heading "许丹" [level=2] [ref=e53]:
+          - generic "许丹" [ref=e54]
+        - paragraph [ref=e55]: "@xu-cindy"
+        - paragraph [ref=e56]: 许丹 暂无简介
+      - link " 个人设置" [ref=e58] [cursor=pointer]:
+        - /url: /profile/account_information
+        - generic [ref=e59]: 
+        - text: 个人设置
+      - generic [ref=e61]:
+        - link "0 Stars" [ref=e63] [cursor=pointer]:
+          - /url: /xu-cindy/starred
+          - generic [ref=e64]: "0"
+          - generic [ref=e65]: Stars
+        - link "1 Watches" [ref=e67] [cursor=pointer]:
+          - /url: /xu-cindy/watched
+          - generic [ref=e68]: "1"
+          - generic [ref=e69]: Watches
+        - link "0 Followers" [ref=e71] [cursor=pointer]:
+          - /url: /xu-cindy/followers
+          - generic [ref=e72]: "0"
+          - generic [ref=e73]: Followers
+        - link "0 Following" [ref=e75] [cursor=pointer]:
+          - /url: /xu-cindy/following
+          - generic [ref=e76]: "0"
+          - generic [ref=e77]: Following
+    - generic [ref=e79]:
+      - generic [ref=e81]:
+        - link " 概览" [ref=e82] [cursor=pointer]:
+          - /url: /xu-cindy
+          - generic [ref=e83]: 
+          - text: 概览
+        - link " 仓库 1" [ref=e84] [cursor=pointer]:
+          - /url: /xu-cindy/projects
+          - generic [ref=e85]: 
+          - text: 仓库
+          - generic [ref=e86]: "1"
+        - link " 星选集" [ref=e87] [cursor=pointer]:
+          - /url: /xu-cindy/collections
+          - generic [ref=e88]: 
+          - text: 星选集
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - heading "热门项目" [level=3] [ref=e91]
+          - link "自定义精选项目" [ref=e92] [cursor=pointer]:
+            - /url: /xu-cindy/all_public_projects
+        - generic [ref=e94]:
+          - generic [ref=e95]:
+            - link "dragon-boat-festival" [ref=e97] [cursor=pointer]:
+              - /url: /xu-cindy/dragon-boat-festival
+            - paragraph [ref=e98]: dragon-boat-festival
+          - generic [ref=e100]:
+            - link " 1" [ref=e101] [cursor=pointer]:
+              - /url: /xu-cindy/dragon-boat-festival/watchers
+              - generic [ref=e102]: 
+              - text: "1"
+            - link " 0" [ref=e103] [cursor=pointer]:
+              - /url: /xu-cindy/dragon-boat-festival/stargazers
+              - generic [ref=e104]: 
+              - text: "0"
+            - link " 0" [ref=e105] [cursor=pointer]:
+              - /url: /xu-cindy/dragon-boat-festival/members
+              - generic [ref=e106]: 
+              - text: "0"
+      - text: 
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - heading "贡献度" [level=3] [ref=e110]
+            - generic [ref=e112] [cursor=pointer]:
+              - generic [ref=e113]: "2026"
+              - generic [ref=e114]: 
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - generic [ref=e117]:
+                - generic [ref=e118]: 周一
+                - generic [ref=e119]: 周四
+                - generic [ref=e120]: 周日
+              - generic [ref=e121]:
+                - generic [ref=e136]: 六月
+                - generic [ref=e167]: 七月
+                - generic [ref=e199]: 八月
+                - generic [ref=e231]: 九月
+                - generic [ref=e262]: 十月
+                - generic [ref=e294]: 十一月
+                - generic [ref=e325]: 十二月
+                - generic [ref=e357]: 一月
+                - generic [ref=e389]: 二月
+                - generic [ref=e418]: 三月
+                - generic [ref=e450]: 四月
+                - generic [ref=e481]: 五月
+            - generic [ref=e500]:
+              - generic [ref=e501]: 少
+              - generic [ref=e508]: 多
+            - generic [ref=e509]:
+              - paragraph [ref=e510]: 最近一年贡献：2 次
+              - paragraph [ref=e511]: 最长连续贡献：1 日
+              - paragraph [ref=e512]: 最近连续贡献：1 日
+              - paragraph [ref=e513]: 贡献度的统计数据包括代码提交、创建任务 / Pull Request、合并 Pull Request，其中代码提交的次数需本地配置的 git 邮箱是 Gitee 帐号已确认绑定的才会被统计。
+        - heading "动态" [level=3] [ref=e516]
+  - contentinfo [ref=e524]:
+    - generic [ref=e525]:
+      - link "Gitee - 基于 Git 的代码托管和研发协作平台" [ref=e527] [cursor=pointer]:
+        - /url: https://gitee.com
+        - img "Gitee - 基于 Git 的代码托管和研发协作平台" [ref=e528]
+      - generic [ref=e529]: 北京奥思研工智能科技有限公司版权所有
+      - generic [ref=e530]:
+        - generic [ref=e532]:
+          - generic [ref=e534]:
+            - link "Git 大全" [ref=e536] [cursor=pointer]:
+              - /url: /all-about-git
+            - link "Git 命令学习" [ref=e538] [cursor=pointer]:
+              - /url: https://help.gitee.com/learn-Git-Branching/
+            - link "CopyCat 代码克隆检测" [ref=e540] [cursor=pointer]:
+              - /url: https://copycat.gitee.com/
+            - link "APP与插件下载" [ref=e542] [cursor=pointer]:
+              - /url: /appclient
+          - generic [ref=e544]:
+            - link "Gitee 封面人物" [ref=e546] [cursor=pointer]:
+              - /url: /gitee-stars
+            - link "GVP 项目" [ref=e548] [cursor=pointer]:
+              - /url: /gvp
+            - link "Gitee 博客" [ref=e550] [cursor=pointer]:
+              - /url: https://blog.gitee.com/
+            - link "Gitee 公益计划" [ref=e552] [cursor=pointer]:
+              - /url: /enterprises#nonprofit-plan
+            - link "Gitee 持续集成" [ref=e554] [cursor=pointer]:
+              - /url: https://gitee.com/features/gitee-go
+          - generic [ref=e556]:
+            - link "OpenAPI" [ref=e558] [cursor=pointer]:
+              - /url: /api/v5/swagger
+            - link "MCP Server" [ref=e560] [cursor=pointer]:
+              - /url: https://gitee.com/oschina/mcp-gitee
+            - link "帮助文档" [ref=e562] [cursor=pointer]:
+              - /url: https://help.gitee.com
+            - link "在线自助服务" [ref=e564] [cursor=pointer]:
+              - /url: /self_services
+            - link "更新日志" [ref=e566] [cursor=pointer]:
+              - /url: /help/articles/4378
+          - generic [ref=e568]:
+            - link "关于我们" [ref=e570] [cursor=pointer]:
+              - /url: /about_us
+            - link "加入我们" [ref=e572] [cursor=pointer]:
+              - /url: " https://gitee.com/oschina/jobs"
+            - link "使用条款" [ref=e574] [cursor=pointer]:
+              - /url: /terms
+            - link "意见建议" [ref=e576] [cursor=pointer]:
+              - /url: /oschina/git-osc/issues
+            - link "合作伙伴" [ref=e578] [cursor=pointer]:
+              - /url: /links.html
+        - generic [ref=e579]:
+          - generic [ref=e580]:
+            - img "技术交流QQ群" [ref=e582]
+            - paragraph [ref=e583]: 技术交流QQ群
+          - generic [ref=e584]:
+            - img "微信服务号" [ref=e586]
+            - paragraph [ref=e587]: 微信服务号
+          - generic [ref=e589]:
+            - link " client@oschina.cn" [ref=e591] [cursor=pointer]:
+              - /url: "mailto: client@oschina.cn"
+              - generic [ref=e592]: 
+              - text: client@oschina.cn
+            - generic [ref=e594] [cursor=pointer]:
+              - generic [ref=e595]: 
+              - text: 企业版在线使用：400-606-0201
+            - generic [ref=e597] [cursor=pointer]:
+              - generic [ref=e598]: 
+              - generic [ref=e599]: 专业版私有部署：
+              - generic [ref=e600]: 赖经理 13058176526
+    - generic [ref=e603]:
+      - generic [ref=e604]:
+        - generic [ref=e605]:
+          - img "开放原子开源基金会" [ref=e606]
+          - link "开放原子开源基金会" [ref=e607] [cursor=pointer]:
+            - /url: https://www.openatom.org/
+          - generic [ref=e608]: 合作代码托管平台
+        - generic [ref=e609]:
+          - img "违法和不良信息举报中心" [ref=e610]
+          - link "违法和不良信息举报中心" [ref=e611] [cursor=pointer]:
+            - /url: https://www.12377.cn
+        - link "京ICP备2025119063号" [ref=e613] [cursor=pointer]:
+          - /url: http://beian.miit.gov.cn/
+        - generic [ref=e614]:
+          - img "京公网安备11011502039387号" [ref=e615]
+          - link "京公网安备11011502039387号" [ref=e616] [cursor=pointer]:
+            - /url: https://beian.mps.gov.cn/#/query/webSearch?code=11011502039387
+      - generic [ref=e617]:
+        - generic [ref=e618]: 
+        - link "简 体" [ref=e619] [cursor=pointer]:
+          - /url: /language/zh-CN
+        - text: /
+        - link "繁 體" [ref=e620] [cursor=pointer]:
+          - /url: /language/zh-TW
+        - text: /
+        - link "English" [ref=e621] [cursor=pointer]:
+          - /url: /language/en
+  - generic [ref=e622]:
+    - generic [ref=e624] [cursor=pointer]: 
+    - text:    
+    - generic [ref=e626] [cursor=pointer]: 
+  - text:  
+  - text:      

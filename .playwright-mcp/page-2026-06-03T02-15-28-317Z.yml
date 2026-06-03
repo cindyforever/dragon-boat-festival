@@ -1,0 +1,31 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4] [cursor=pointer]: 🎋
+    - generic [ref=e5] [cursor=pointer]: 🍃
+    - generic [ref=e6] [cursor=pointer]: 🚣
+    - generic [ref=e7] [cursor=pointer]: 🫔
+    - generic [ref=e8] [cursor=pointer]: 🏮
+  - img "端午主题" [ref=e10]
+  - generic [ref=e11]:
+    - heading "粽情端午 · 智趣同行" [level=1] [ref=e12]
+    - paragraph [ref=e13]: 服务与软件研发管理部上研分部 2026端午活动
+  - generic [ref=e15]: 🎋 五月初五 · 端午安康
+  - generic [ref=e16]:
+    - generic [ref=e17]: 端午祝福语
+    - generic [ref=e18]:
+      - textbox "写下你的端午祝福..." [ref=e19]
+      - generic [ref=e20]: 0 / 100
+    - generic [ref=e21]:
+      - generic [ref=e22]: 或选择以下祝福：
+      - generic [ref=e23]:
+        - generic [ref=e24] [cursor=pointer]: 端午安康
+        - generic [ref=e25] [cursor=pointer]: 粽香万里
+        - generic [ref=e26] [cursor=pointer]: 龙舟竞渡
+        - generic [ref=e27] [cursor=pointer]: 福运连连
+  - button "✨ 生成专属祝福" [ref=e28] [cursor=pointer]
+  - generic [ref=e29]:
+    - generic [ref=e30] [cursor=pointer]: 🎋
+    - generic [ref=e31] [cursor=pointer]: 🍃
+    - generic [ref=e32] [cursor=pointer]: 💰
+    - generic [ref=e33] [cursor=pointer]: 🌟
+    - generic [ref=e34] [cursor=pointer]: 🐉
