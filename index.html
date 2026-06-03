@@ -39,13 +39,14 @@
             z-index: 0;
         }
 
-        /* 背景右下角统计 */
+        /* 背景左下角统计 */
         .bg-stats {
             position: fixed;
             bottom: 20px;
-            right: 20px;
-            font-size: 0.7rem;
-            color: rgba(76, 175, 80, 0.5);
+            left: 20px;
+            font-size: 0.85rem;
+            color: rgba(0, 0, 0, 0.5);
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
             letter-spacing: 1px;
             z-index: 0;
         }
@@ -653,7 +654,7 @@
         function getBlessingCount() {
             let count = localStorage.getItem('dragonBoatCount') || 0;
             count = parseInt(count);
-            document.getElementById('statsText').textContent = `🎉 已有 ${count} 位伙伴送上端午祝福`;
+            document.getElementById('statsText').textContent = `🎉 已有 ${count} 位伙伴收到端午祝福`;
         }
 
         // 增加祝福人次
@@ -661,7 +662,7 @@
             let count = localStorage.getItem('dragonBoatCount') || 0;
             count = parseInt(count) + 1;
             localStorage.setItem('dragonBoatCount', count);
-            document.getElementById('statsText').textContent = `🎉 已有 ${count} 位伙伴送上端午祝福`;
+            document.getElementById('statsText').textContent = `🎉 已有 ${count} 位伙伴收到端午祝福`;
         }
 
         // 生成分享文案
