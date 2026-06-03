@@ -541,6 +541,10 @@
 
         <!-- 祝福输入区（发送方） -->
         <div class="input-section" id="inputSection">
+            <div class="input-label">你的名字</div>
+            <div class="input-box" style="margin-bottom: 12px;">
+                <input type="text" id="nameInput" placeholder="请输入你的名字" maxlength="20" style="width: 100%; padding: 12px; border: 2px solid #c8e6c9; border-radius: 12px; font-size: 0.9rem; font-family: inherit; color: #333; background: #fafdf7; transition: border-color 0.3s ease; outline: none;">
+            </div>
             <div class="input-label">端午祝福语</div>
             <div class="input-box">
                 <textarea id="blessingInput" placeholder="写下你的端午祝福..." maxlength="100" oninput="updateCharCount()"></textarea>
@@ -633,9 +637,10 @@
 
         // 生成分享文案
         function generateShare() {
+            const name = document.getElementById('nameInput').value.trim() || '神秘伙伴';
             const blessing = getBlessing();
             const baseUrl = 'https://cindyforever.github.io/dragon-boat-festival/';
-            const shareUrl = baseUrl + '?blessing=' + encodeURIComponent(blessing);
+            const shareUrl = baseUrl + '?name=' + encodeURIComponent(name) + '&blessing=' + encodeURIComponent(blessing);
 
             const shareText = `【AI绘梦·粽情告白——服务与软件研发管理部上研分部端午活动】
 AI绘梦·粽情告白😄亲爱的伙伴祝你${blessing}
@@ -701,12 +706,15 @@ ${shareUrl}`;
         // 页面加载时检查URL参数
         window.onload = function() {
             const urlParams = new URLSearchParams(window.location.search);
+            const nameParam = urlParams.get('name');
             const blessingParam = urlParams.get('blessing');
 
             if (blessingParam) {
+                const senderName = nameParam ? decodeURIComponent(nameParam) : '神秘伙伴';
                 const decodedBlessing = decodeURIComponent(blessingParam);
                 document.getElementById('blessingText').textContent = decodedBlessing;
                 document.getElementById('blessingDisplay').classList.add('active');
+                document.querySelector('.sender-info').innerHTML = `🌿 收到一份来自 <strong>${senderName}</strong> 的端午祝福，请查收 🌿`;
                 document.getElementById('inputSection').style.display = 'none';
                 document.getElementById('generateBtn').style.display = 'none';
                 document.getElementById('replySection').classList.add('active');
