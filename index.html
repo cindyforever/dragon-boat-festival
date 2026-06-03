@@ -241,6 +241,44 @@
             transform: translateY(-50%) scaleX(-1) scale(1.2) rotate(10deg);
         }
 
+        /* 右下角6个小粽子装饰 */
+        .bottom-right-deco {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+
+        .bottom-right-deco .deco-zongzi {
+            position: relative;
+            width: 50px;
+            height: auto;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            z-index: 2;
+        }
+
+        .bottom-right-deco .deco-zongzi:hover {
+            transform: scale(1.3) rotate(15deg);
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+        }
+
+        .bottom-right-deco .deco-1 { transform: rotate(-15deg); }
+        .bottom-right-deco .deco-2 { transform: rotate(10deg); }
+        .bottom-right-deco .deco-3 { transform: rotate(-8deg); }
+        .bottom-right-deco .deco-4 { transform: rotate(12deg); }
+        .bottom-right-deco .deco-5 { transform: rotate(-5deg); }
+        .bottom-right-deco .deco-6 { transform: rotate(8deg); }
+
+        .bottom-right-deco .deco-zongzi:hover.deco-1 { transform: rotate(-15deg) scale(1.3); }
+        .bottom-right-deco .deco-zongzi:hover.deco-2 { transform: rotate(10deg) scale(1.3); }
+        .bottom-right-deco .deco-zongzi:hover.deco-3 { transform: rotate(-8deg) scale(1.3); }
+        .bottom-right-deco .deco-zongzi:hover.deco-4 { transform: rotate(12deg) scale(1.3); }
+        .bottom-right-deco .deco-zongzi:hover.deco-5 { transform: rotate(-5deg) scale(1.3); }
+        .bottom-right-deco .deco-zongzi:hover.deco-6 { transform: rotate(8deg) scale(1.3); }
+
         /* 标题区 */
         .title-section {
             text-align: center;
@@ -1192,6 +1230,16 @@ ${shareUrl}`;
                 <button class="share-modal-copy-btn" id="modalCopyBtn" onclick="copyModalShare()">📋 一键复制</button>
             </div>
         </div>
+    </div>
+
+    <!-- 右下角6个小粽子装饰 -->
+    <div class="bottom-right-deco">
+        <img src="图片1.png" alt="" class="deco-zongzi deco-1" onclick="showFloatText(this, '端午安康')" title="点我">
+        <img src="图片2.png" alt="" class="deco-zongzi deco-2" onclick="showFloatText(this, '粽有好运')" title="点我">
+        <img src="图片3.png" alt="" class="deco-zongzi deco-3" onclick="showFloatText(this, '粽享幸福')" title="点我">
+        <img src="图片1.png" alt="" class="deco-zongzi deco-4" onclick="showFloatText(this, '端午安康')" title="点我">
+        <img src="图片2.png" alt="" class="deco-zongzi deco-5" onclick="showFloatText(this, '粽有好运')" title="点我">
+        <img src="图片3.png" alt="" class="deco-zongzi deco-6" onclick="showFloatText(this, '粽享幸福')" title="点我">
     </div>
 </body>
 </html>
