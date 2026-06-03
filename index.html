@@ -741,7 +741,11 @@ ${shareUrl}`;
             const blessingParam = urlParams.get('blessing');
 
             if (blessingParam) {
-                incrementBlessingCount();
+                // 检查是否已统计过（同一浏览器同一会话不重复计数）
+                if (!sessionStorage.getItem('blessingCounted')) {
+                    incrementBlessingCount();
+                    sessionStorage.setItem('blessingCounted', 'true');
+                }
                 const senderName = nameParam ? decodeURIComponent(nameParam) : '神秘伙伴';
                 const decodedBlessing = decodeURIComponent(blessingParam);
                 document.getElementById('blessingText').textContent = decodedBlessing;
