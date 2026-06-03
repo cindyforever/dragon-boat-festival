@@ -541,10 +541,6 @@
 
         <!-- 祝福输入区（发送方） -->
         <div class="input-section" id="inputSection">
-            <div class="input-label">你的名字</div>
-            <div class="input-box" style="margin-bottom: 12px;">
-                <input type="text" id="nameInput" placeholder="请输入你的名字" maxlength="20" style="width: 100%; padding: 12px; border: 2px solid #c8e6c9; border-radius: 12px; font-size: 0.9rem; font-family: inherit; color: #333; background: #fafdf7; transition: border-color 0.3s ease; outline: none;">
-            </div>
             <div class="input-label">端午祝福语</div>
             <div class="input-box">
                 <textarea id="blessingInput" placeholder="写下你的端午祝福..." maxlength="100" oninput="updateCharCount()"></textarea>
@@ -558,6 +554,10 @@
                     <span class="preset-item" onclick="selectPreset(this)">代码无bug，端午有好运</span>
                     <span class="preset-item" onclick="selectPreset(this)">担当开放，福运连连</span>
                 </div>
+            </div>
+            <div class="input-label" style="margin-top: 12px;">你的名字（选填）</div>
+            <div class="input-box">
+                <input type="text" id="nameInput" placeholder="请输入你的名字" maxlength="20" style="width: 100%; padding: 12px; border: 2px solid #c8e6c9; border-radius: 12px; font-size: 0.9rem; font-family: inherit; color: #333; background: #fafdf7; transition: border-color 0.3s ease; outline: none;">
             </div>
         </div>
 
