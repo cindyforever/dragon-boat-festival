@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI绘梦·粽情告白 - 端午祝福</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 50%, #a5d6a7 100%);
+            font-family: "PingFang SC", "Microsoft YaHei", "STHeiti", sans-serif;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+        }
+
+        /* 简约纹路背景 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(129, 199, 132, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(76, 175, 80, 0.1) 0%, transparent 50%),
+                repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(76, 175, 80, 0.03) 20px, rgba(76, 175, 80, 0.03) 40px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* 主卡片容器 */
+        .card {
+            width: 100%;
+            max-width: 520px;
+            background: linear-gradient(145deg, #ffffff 0%, #f1f8e9 100%);
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(76, 175, 80, 0.15), 0 0 0 1px rgba(76, 175, 80, 0.1);
+            padding: 28px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, rgba(76, 175, 80, 0.1) 0%, rgba(129, 199, 132, 0.05) 100%);
+            border-radius: 50%;
+        }
+
+        .card::after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, rgba(255, 213, 79, 0.15) 0%, rgba(255, 193, 7, 0.05) 100%);
+            border-radius: 50%;
+        }
+
+        /* 顶部装饰区 */
+        .header-deco {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-deco span {
+            font-size: 1.6rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            display: inline-block;
+        }
+
+        .header-deco span:hover {
+            transform: scale(1.4) rotate(15deg);
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+        }
+
+        .header-deco span:active {
+            transform: scale(1.2) rotate(-10deg);
+            transition: all 0.1s ease;
+        }
+
+        .header-deco span:nth-child(1) { transition-delay: 0s; }
+        .header-deco span:nth-child(2) { transition-delay: 0.05s; }
+        .header-deco span:nth-child(3) { transition-delay: 0.1s; }
+        .header-deco span:nth-child(4) { transition-delay: 0.15s; }
+        .header-deco span:nth-child(5) { transition-delay: 0.2s; }
+
+        /* 主视觉区 */
+        .main-visual {
+            text-align: center;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .main-visual img {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(76, 175, 80, 0.2);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .main-visual img:hover {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 12px 32px rgba(76, 175, 80, 0.35);
+            filter: brightness(1.05);
+        }
+
+        .main-visual img:active {
+            transform: scale(0.98);
+            transition: all 0.1s ease;
+        }
+
+        /* 标题区 */
+        .title-section {
+            text-align: center;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .main-title {
+            font-size: 1.6rem;
+            color: #2e7d32;
+            letter-spacing: 4px;
+            margin-bottom: 6px;
+            text-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);
+        }
+
+        .sub-title {
+            font-size: 0.75rem;
+            color: #66bb6a;
+            letter-spacing: 2px;
+        }
+
+        /* 日期标签 */
+        .date-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #81c784 0%, #4caf50 100%);
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+        }
+
+        /* 祝福展示区（接收方） */
+        .blessing-display {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+            text-align: center;
+            display: none;
+            border: 2px solid #a5d6a7;
+        }
+
+        .blessing-display.active {
+            display: block;
+            animation: fadeInUp 0.4s ease;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .blessing-display .sender-info {
+            font-size: 0.75rem;
+            color: #4caf50;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .blessing-display .blessing-text {
+            font-size: 1.2rem;
+            color: #2e7d32;
+            line-height: 1.6;
+            padding: 12px;
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid #a5d6a7;
+        }
+
+        /* 祝福输入区（发送方） */
+        .input-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 16px rgba(76, 175, 80, 0.08);
+            position: relative;
+            z-index: 1;
+        }
+
+        .input-label {
+            font-size: 0.9rem;
+            color: #4caf50;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        .input-box {
+            position: relative;
+        }
+
+        .input-box textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #c8e6c9;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-family: inherit;
+            resize: none;
+            height: 70px;
+            color: #333;
+            background: #fafdf7;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-box textarea::placeholder {
+            color: #a5d6a7;
+        }
+
+        .input-box textarea:focus {
+            outline: none;
+            border-color: #81c784;
+        }
+
+        .char-count {
+            position: absolute;
+            bottom: 8px;
+            right: 12px;
+            font-size: 0.75rem;
+            color: #a5d6a7;
+        }
+
+        /* 预设祝福语 */
+        .preset-section {
+            margin-top: 10px;
+        }
+
+        .preset-title {
+            font-size: 0.75rem;
+            color: #81c784;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .preset-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .preset-item {
+            padding: 6px 12px;
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border: 1px solid #a5d6a7;
+            border-radius: 16px;
+            font-size: 0.75rem;
+            color: #4caf50;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .preset-item:hover {
+            background: linear-gradient(135deg, #81c784 0%, #4caf50 100%);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+        }
+
+        .preset-item:active {
+            transform: translateY(0) scale(0.95);
+        }
+
+        .preset-item.selected {
+            background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+            color: #fff;
+            border-color: #4caf50;
+        }
+
+        /* 生成按钮 */
+        .generate-btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            font-size: 1rem;
+            color: #fff;
+            background: linear-gradient(135deg, #ffd54f 0%, #ffb300 100%);
+            border: none;
+            border-radius: 24px;
+            cursor: pointer;
+            letter-spacing: 3px;
+            box-shadow: 0 4px 16px rgba(255, 179, 0, 0.35);
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .generate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 179, 0, 0.45);
+        }
+
+        .generate-btn:active {
+            transform: translateY(0) scale(0.98);
+        }
+
+        /* 分享文案区 */
+        .share-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 16px;
+            margin-top: 12px;
+            display: none;
+            box-shadow: 0 4px 16px rgba(76, 175, 80, 0.08);
+            position: relative;
+            z-index: 1;
+        }
+
+        .share-section.active {
+            display: block;
+            animation: fadeInUp 0.3s ease;
+        }
+
+        .share-title {
+            font-size: 0.85rem;
+            color: #4caf50;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .share-text {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #c8e6c9;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-family: inherit;
+            resize: none;
+            height: 100px;
+            color: #333;
+            background: #fafdf7;
+            line-height: 1.6;
+        }
+
+        .copy-btn {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            padding: 12px;
+            font-size: 0.95rem;
+            color: #fff;
+            background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 12px rgba(67, 160, 71, 0.35);
+            transition: all 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(67, 160, 71, 0.45);
+        }
+
+        .copy-btn:active {
+            transform: translateY(0) scale(0.98);
+        }
+
+        /* 回复祝福按钮 */
+        .reply-section {
+            margin-top: 12px;
+            text-align: center;
+            display: none;
+            position: relative;
+            z-index: 1;
+        }
+
+        .reply-section.active {
+            display: block;
+        }
+
+        .reply-btn {
+            padding: 12px 28px;
+            font-size: 0.95rem;
+            color: #fff;
+            background: linear-gradient(135deg, #81c784 0%, #4caf50 100%);
+            border: none;
+            border-radius: 24px;
+            cursor: pointer;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 16px rgba(76, 175, 80, 0.35);
+            transition: all 0.3s ease;
+        }
+
+        .reply-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.45);
+        }
+
+        .reply-btn:active {
+            transform: translateY(0) scale(0.98);
+        }
+
+        /* 飘字效果 */
+        .float-text {
+            position: fixed;
+            font-size: 1rem;
+            font-weight: bold;
+            pointer-events: none;
+            opacity: 0;
+            z-index: 1000;
+            color: #4caf50;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        @keyframes floatUp {
+            0% { opacity: 1; transform: translateY(0) scale(1); }
+            100% { opacity: 0; transform: translateY(-50px) scale(1.1); }
+        }
+
+        /* 底部装饰区 */
+        .footer-deco {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-deco span {
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            opacity: 0.7;
+        }
+
+        .footer-deco span:hover {
+            opacity: 1;
+            transform: scale(1.3) rotate(-10deg);
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+        }
+
+        .footer-deco span:active {
+            transform: scale(1.1) rotate(5deg);
+            transition: all 0.1s ease;
+        }
+
+        /* 响应式 */
+        @media (max-width: 480px) {
+            .card {
+                max-width: 100%;
+                padding: 20px;
+            }
+            .main-visual img {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-height: 700px) {
+            .card {
+                padding: 16px;
+            }
+            .main-visual img {
+                max-width: 240px;
+            }
+            .input-box textarea {
+                height: 55px;
+            }
+            .share-text {
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card" id="mainContainer">
+        <!-- 顶部装饰 -->
+        <div class="header-deco">
+            <span onclick="showFloatText(this, '粽香四溢')">🎋</span>
+            <span onclick="showFloatText(this, '艾叶飘香')">🍃</span>
+            <span onclick="showFloatText(this, '龙舟竞渡')">🚣</span>
+            <span onclick="showFloatText(this, '好事发生')">🫔</span>
+            <span onclick="showFloatText(this, '福气满满')">🏮</span>
+        </div>
+
+        <!-- 主视觉区 -->
+        <div class="main-visual">
+            <img id="dragonBoatImg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%234caf50'/%3E%3Cstop offset='100%25' style='stop-color:%2381c784'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23bg)' width='320' height='200' rx='16'/%3E%3Ctext x='160' y='75' text-anchor='middle' font-size='56'%3E🐲%3C/text%3E%3Ctext x='160' y='125' text-anchor='middle' font-size='22' fill='%23fff'%3E端午安康%3C/text%3E%3Ctext x='160' y='155' text-anchor='middle' font-size='14' fill='%23e8f5e9'%3EAI绘梦·粽情告白%3C/text%3E%3Ctext x='160' y='180' text-anchor='middle' font-size='18'%3E🎋🫔🍃🏮🚣%3C/text%3E%3C/svg%3E" alt="端午主题">
+        </div>
+
+        <!-- 标题区 -->
+        <div class="title-section">
+            <h1 class="main-title">AI绘梦·粽情告白</h1>
+            <p class="sub-title">服务与软件研发管理部上研分部 2026端午活动</p>
+        </div>
+
+        <!-- 日期标签 -->
+        <div style="text-align: center;">
+            <span class="date-tag">🎋 五月初五 · 端午安康</span>
+        </div>
+
+        <!-- 祝福展示区（接收方） -->
+        <div class="blessing-display" id="blessingDisplay">
+            <div class="sender-info">—— 服务与软件研发管理部上研分部端午祝福</div>
+            <div class="blessing-text" id="blessingText"></div>
+        </div>
+
+        <!-- 祝福输入区（发送方） -->
+        <div class="input-section" id="inputSection">
+            <div class="input-label">端午祝福语</div>
+            <div class="input-box">
+                <textarea id="blessingInput" placeholder="写下你的端午祝福..." maxlength="100" oninput="updateCharCount()"></textarea>
+                <span class="char-count"><span id="charCount">0</span> / 100</span>
+            </div>
+            <div class="preset-section">
+                <div class="preset-title">或选择以下祝福：</div>
+                <div class="preset-list">
+                    <span class="preset-item" onclick="selectPreset(this)">端午安康</span>
+                    <span class="preset-item" onclick="selectPreset(this)">粽香万里</span>
+                    <span class="preset-item" onclick="selectPreset(this)">龙舟竞渡</span>
+                    <span class="preset-item" onclick="selectPreset(this)">福运连连</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 生成按钮 -->
+        <button class="generate-btn" id="generateBtn" onclick="generateShare()">✨ 生成专属祝福</button>
+
+        <!-- 分享文案区 -->
+        <div class="share-section" id="shareSection">
+            <div class="share-title">📝 一键复制发送给同事</div>
+            <textarea class="share-text" id="shareText" readonly></textarea>
+            <button class="copy-btn" onclick="copyShare()">📋 一键复制</button>
+        </div>
+
+        <!-- 回复祝福按钮（接收方显示） -->
+        <div class="reply-section" id="replySection">
+            <button class="reply-btn" onclick="goToSend()">💬 我也要送祝福</button>
+        </div>
+
+        <!-- 底部装饰 -->
+        <div class="footer-deco">
+            <span onclick="showFloatText(this, '好运+100')">🎋</span>
+            <span onclick="showFloatText(this, '健康+100')">🍃</span>
+            <span onclick="showFloatText(this, '财运+100')">💰</span>
+            <span onclick="showFloatText(this, '事业+80')">🌟</span>
+            <span onclick="showFloatText(this, '福气+90')">🐉</span>
+        </div>
+    </div>
+
+    <!-- 飘字效果容器 -->
+    <div id="floatContainer"></div>
+
+    <script>
+        // 更新字数统计
+        function updateCharCount() {
+            const input = document.getElementById('blessingInput');
+            document.getElementById('charCount').textContent = input.value.length;
+        }
+
+        // 选择预设祝福语
+        function selectPreset(element) {
+            document.querySelectorAll('.preset-item').forEach(item => {
+                item.classList.remove('selected');
+            });
+            element.classList.add('selected');
+            document.getElementById('blessingInput').value = element.textContent;
+            updateCharCount();
+        }
+
+        // 获取当前祝福语
+        function getBlessing() {
+            const input = document.getElementById('blessingInput').value.trim();
+            if (input) return input;
+            const selected = document.querySelector('.preset-item.selected');
+            if (selected) return selected.textContent;
+            return '端午安康！愿你粽享欢乐';
+        }
+
+        // 显示飘字效果
+        function showFloatText(element, text) {
+            const rect = element.getBoundingClientRect();
+            const floatEl = document.createElement('div');
+            floatEl.className = 'float-text';
+            floatEl.textContent = text;
+            floatEl.style.left = rect.left + rect.width / 2 + 'px';
+            floatEl.style.top = rect.top + 'px';
+            floatEl.style.animation = 'floatUp 1s ease-out forwards';
+            document.body.appendChild(floatEl);
+            setTimeout(() => floatEl.remove(), 1000);
+        }
+
+        // 龙舟图标点击效果
+        document.getElementById('dragonBoatImg').addEventListener('click', function(e) {
+            showFloatText(this, '龙舟竞渡！');
+        });
+
+        // 生成分享文案
+        function generateShare() {
+            const blessing = getBlessing();
+            const baseUrl = 'https://cindyforever.github.io/dragon-boat-festival/';
+            const shareUrl = baseUrl + '?blessing=' + encodeURIComponent(blessing);
+
+            const shareText = `【AI绘梦·粽情告白——服务与软件研发管理部上研分部端午活动】
+AI绘梦·粽情告白😄亲爱的伙伴祝你${blessing}
+点击链接 接好运，生成你的端午祝福专属海报🐉
+${shareUrl}`;
+
+            document.getElementById('shareText').value = shareText;
+            document.getElementById('shareSection').classList.add('active');
+        }
+
+        // 复制分享文案
+        function copyShare() {
+            const text = document.getElementById('shareText').value;
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(function() {
+                    showCopySuccess();
+                }).catch(function() {
+                    fallbackCopy(text);
+                });
+            } else {
+                fallbackCopy(text);
+            }
+        }
+
+        // 显示复制成功提示
+        function showCopySuccess() {
+            const btn = document.querySelector('.copy-btn');
+            const originalText = btn.textContent;
+            btn.textContent = '✓ 已复制';
+            btn.style.background = 'linear-gradient(135deg, #4caf50 0%, #4caf50 100%)';
+            setTimeout(function() {
+                btn.textContent = originalText;
+                btn.style.background = '';
+            }, 2000);
+        }
+
+        // 备用复制方法
+        function fallbackCopy(text) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.top = '0';
+            textArea.style.left = '0';
+            textArea.style.opacity = '0';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                showCopySuccess();
+            } catch (err) {
+                alert('复制失败，请长按祝福语手动复制');
+            }
+            document.body.removeChild(textArea);
+        }
+
+        // 跳转到发送页面
+        function goToSend() {
+            const baseUrl = 'https://cindyforever.github.io/dragon-boat-festival/';
+            window.location.href = baseUrl;
+        }
+
+        // 页面加载时检查URL参数
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const blessingParam = urlParams.get('blessing');
+
+            if (blessingParam) {
+                const decodedBlessing = decodeURIComponent(blessingParam);
+                document.getElementById('blessingText').textContent = decodedBlessing;
+                document.getElementById('blessingDisplay').classList.add('active');
+                document.getElementById('inputSection').style.display = 'none';
+                document.getElementById('generateBtn').style.display = 'none';
+                document.getElementById('replySection').classList.add('active');
+            }
+        };
+    </script>
+</body>
+</html>
