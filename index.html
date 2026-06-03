@@ -39,6 +39,17 @@
             z-index: 0;
         }
 
+        /* 背景右下角统计 */
+        .bg-stats {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 0.7rem;
+            color: rgba(76, 175, 80, 0.5);
+            letter-spacing: 1px;
+            z-index: 0;
+        }
+
         /* 主卡片容器 */
         .card {
             width: 100%;
@@ -584,15 +595,13 @@
             <span onclick="showFloatText(this, '桃花+100')">🌸</span>
             <span onclick="showFloatText(this, '事业+100')">🌟</span>
         </div>
-
-        <!-- 统计小字 -->
-        <div style="text-align: center; margin-top: 16px; position: relative; z-index: 1;">
-            <span id="statsText" style="font-size: 0.7rem; color: #81c784; letter-spacing: 1px;"></span>
-        </div>
     </div>
 
     <!-- 飘字效果容器 -->
     <div id="floatContainer"></div>
+
+    <!-- 背景右下角统计 -->
+    <div id="statsText" class="bg-stats"></div>
 
     <script>
         // 更新字数统计
@@ -657,7 +666,6 @@
 
         // 生成分享文案
         function generateShare() {
-            incrementBlessingCount();
             const name = document.getElementById('nameInput').value.trim() || '神秘伙伴';
             const blessing = getBlessing();
             const baseUrl = 'https://cindyforever.github.io/dragon-boat-festival/';
@@ -732,6 +740,7 @@ ${shareUrl}`;
             const blessingParam = urlParams.get('blessing');
 
             if (blessingParam) {
+                incrementBlessingCount();
                 const senderName = nameParam ? decodeURIComponent(nameParam) : '神秘伙伴';
                 const decodedBlessing = decodeURIComponent(blessingParam);
                 document.getElementById('blessingText').textContent = decodedBlessing;
