@@ -1069,7 +1069,7 @@
             const name = document.getElementById('nameInput').value.trim() || '神秘伙伴';
             const blessing = getBlessing();
             const baseUrl = 'https://cindyforever.github.io/dragon-boat-festival/';
-            const shareUrl = baseUrl + '?n=' + encodeURIComponent(name) + '&b=' + encodeURIComponent(blessing);
+            const shareUrl = baseUrl + '?d=' + btoa(unescape(encodeURIComponent(name + '|' + blessing)));
 
             const greeting = name === '神秘伙伴' ? '亲爱的伙伴' : name;
             const shareText = `【好运粽动员 祝福派送中——服务与软件研发管理部上研分部2026端午活动】
@@ -1196,23 +1196,26 @@ ${shareUrl}`;
         window.onload = function() {
             getBlessingCount();
             const urlParams = new URLSearchParams(window.location.search);
-            const nameParam = urlParams.get('n');
-            const blessingParam = urlParams.get('b');
+            const dataParam = urlParams.get('d');
 
-            if (blessingParam) {
+            if (dataParam) {
                 // 检查是否已统计过（同一浏览器同一会话不重复计数）
                 if (!sessionStorage.getItem('blessingCounted')) {
                     incrementBlessingCount();
                     sessionStorage.setItem('blessingCounted', 'true');
                 }
-                const senderName = nameParam ? decodeURIComponent(nameParam) : '神秘伙伴';
-                const decodedBlessing = decodeURIComponent(blessingParam);
-                document.getElementById('blessingText').textContent = decodedBlessing;
-                document.getElementById('blessingDisplay').classList.add('active');
-                document.querySelector('.sender-info').innerHTML = `🌿 收到一份来自 <strong>${senderName}</strong> 的端午祝福，请查收 🌿`;
-                document.getElementById('inputSection').style.display = 'none';
-                document.getElementById('generateBtn').style.display = 'none';
-                document.getElementById('replySection').classList.add('active');
+                try {
+                    const decoded = decodeURIComponent(escape(atob(dataParam)));
+                    const [senderName, decodedBlessing] = decoded.split('|');
+                    document.getElementById('blessingText').textContent = decodedBlessing;
+                    document.getElementById('blessingDisplay').classList.add('active');
+                    document.querySelector('.sender-info').innerHTML = `🌿 收到一份来自 <strong>${senderName || '神秘伙伴'}</strong> 的端午祝福，请查收 🌿`;
+                    document.getElementById('inputSection').style.display = 'none';
+                    document.getElementById('generateBtn').style.display = 'none';
+                    document.getElementById('replySection').classList.add('active');
+                } catch(e) {
+                    console.log('参数解析错误');
+                }
             }
         };
     </script>
