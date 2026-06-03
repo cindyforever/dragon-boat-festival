@@ -511,6 +511,128 @@
             box-shadow: 0 6px 16px rgba(67, 160, 71, 0.45);
         }
 
+        /* 分享弹窗样式 */
+        .share-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .share-modal.active {
+            display: flex;
+        }
+
+        .share-modal-content {
+            background: linear-gradient(145deg, #ffffff 0%, #f1f8e9 100%);
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+            padding: 0;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.3s ease;
+        }
+
+        .share-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 24px;
+            border-bottom: 1px solid #e8f5e9;
+        }
+
+        .share-modal-title {
+            font-size: 1.4rem;
+            color: #4caf50;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .share-modal-close {
+            font-size: 2rem;
+            color: #999;
+            cursor: pointer;
+            line-height: 1;
+            transition: color 0.3s ease;
+        }
+
+        .share-modal-close:hover {
+            color: #4caf50;
+        }
+
+        .share-modal-body {
+            padding: 24px;
+        }
+
+        .share-modal-label {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .share-modal-text {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #c8e6c9;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-family: inherit;
+            resize: none;
+            height: 120px;
+            color: #333;
+            background: #fafdf7;
+            line-height: 1.6;
+        }
+
+        .share-modal-copy-btn {
+            display: block;
+            width: 100%;
+            margin-top: 16px;
+            padding: 16px;
+            font-size: 1.2rem;
+            color: #fff;
+            background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 12px rgba(67, 160, 71, 0.35);
+            transition: all 0.3s ease;
+        }
+
+        .share-modal-copy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(67, 160, 71, 0.45);
+        }
+
+        .share-modal-copy-btn.copied {
+            background: linear-gradient(135deg, #4caf50 0%, #4caf50 100%);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         .copy-btn:active {
             transform: translateY(0) scale(0.98);
         }
@@ -787,8 +909,67 @@
 🚣 点击链接接好运，生成你的端午祝福专属海报 🐉
 ${shareUrl}`;
 
-            document.getElementById('shareText').value = shareText;
-            document.getElementById('shareSection').classList.add('active');
+            // 显示弹窗
+            document.getElementById('modalShareText').value = shareText;
+            document.getElementById('shareModal').classList.add('active');
+        }
+
+        // 关闭分享弹窗
+        function closeShareModal() {
+            document.getElementById('shareModal').classList.remove('active');
+        }
+
+        // 点击遮罩层关闭弹窗
+        function closeShareModalOnOverlay(event) {
+            if (event.target === document.getElementById('shareModal')) {
+                closeShareModal();
+            }
+        }
+
+        // 复制弹窗中的分享文案
+        function copyModalShare() {
+            const text = document.getElementById('modalShareText').value;
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(function() {
+                    showModalCopySuccess();
+                }).catch(function() {
+                    modalFallbackCopy(text);
+                });
+            } else {
+                modalFallbackCopy(text);
+            }
+        }
+
+        // 弹窗备用复制方法
+        function modalFallbackCopy(text) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.top = '0';
+            textArea.style.left = '0';
+            textArea.style.opacity = '0';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                showModalCopySuccess();
+            } catch (err) {
+                alert('复制失败，请长按祝福语手动复制');
+            }
+            document.body.removeChild(textArea);
+        }
+
+        // 显示弹窗复制成功
+        function showModalCopySuccess() {
+            const btn = document.getElementById('modalCopyBtn');
+            const originalText = btn.textContent;
+            btn.textContent = '✓ 已复制，快去发送给同事吧！';
+            btn.classList.add('copied');
+            setTimeout(function() {
+                btn.textContent = originalText;
+                btn.classList.remove('copied');
+            }, 2500);
         }
 
         // 复制分享文案
@@ -867,5 +1048,20 @@ ${shareUrl}`;
             }
         };
     </script>
+
+    <!-- 分享弹窗 -->
+    <div class="share-modal" id="shareModal" onclick="closeShareModalOnOverlay(event)">
+        <div class="share-modal-content">
+            <div class="share-modal-header">
+                <span class="share-modal-title">🎉 专属祝福已生成</span>
+                <span class="share-modal-close" onclick="closeShareModal()">×</span>
+            </div>
+            <div class="share-modal-body">
+                <div class="share-modal-label">📋 一键复制发送给同事</div>
+                <textarea class="share-modal-text" id="modalShareText" readonly></textarea>
+                <button class="share-modal-copy-btn" id="modalCopyBtn" onclick="copyModalShare()">📋 一键复制</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
