@@ -57,7 +57,7 @@
             overflow: hidden;
         }
 
-        /* 背景装饰图片网格布局 */
+        /* 背景装饰图片网格布局 - 高低错落斜线网格 */
         .bg-deco-grid {
             position: fixed;
             top: 0;
@@ -65,11 +65,26 @@
             right: 0;
             bottom: 0;
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(6, 1fr);
             gap: 0;
             z-index: 0;
             pointer-events: none;
+            background-image:
+                repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 30px,
+                    rgba(76, 175, 80, 0.08) 30px,
+                    rgba(76, 175, 80, 0.08) 31px
+                ),
+                repeating-linear-gradient(
+                    -45deg,
+                    transparent,
+                    transparent 30px,
+                    rgba(76, 175, 80, 0.08) 30px,
+                    rgba(76, 175, 80, 0.08) 31px
+                );
         }
 
         .bg-deco-item {
@@ -78,40 +93,62 @@
             object-fit: contain;
             cursor: pointer;
             transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            opacity: 0.5;
-            padding: 15px;
+            opacity: 0.6;
+            padding: 5px;
             pointer-events: auto;
         }
 
+        /* 高低错落效果 - 奇偶行错开 */
+        .bg-deco-item:nth-child(12n+1), .bg-deco-item:nth-child(12n+3), .bg-deco-item:nth-child(12n+5), .bg-deco-item:nth-child(12n+7), .bg-deco-item:nth-child(12n+9), .bg-deco-item:nth-child(12n+11) {
+            transform: translateY(-15%);
+        }
+
+        .bg-deco-item:nth-child(12n+2), .bg-deco-item:nth-child(12n+4), .bg-deco-item:nth-child(12n+6), .bg-deco-item:nth-child(12n+8), .bg-deco-item:nth-child(12n+10), .bg-deco-item:nth-child(12n+12) {
+            transform: translateY(15%);
+        }
+
+        /* 交替旋转 */
         .bg-deco-item:nth-child(odd) {
-            transform: rotate(-5deg);
+            transform: rotate(-8deg);
         }
 
         .bg-deco-item:nth-child(even) {
-            transform: rotate(5deg);
+            transform: rotate(8deg);
+        }
+
+        .bg-deco-item:nth-child(12n+1), .bg-deco-item:nth-child(12n+3), .bg-deco-item:nth-child(12n+5), .bg-deco-item:nth-child(12n+7), .bg-deco-item:nth-child(12n+9), .bg-deco-item:nth-child(12n+11) {
+            transform: translateY(-15%) rotate(-8deg);
+        }
+
+        .bg-deco-item:nth-child(12n+2), .bg-deco-item:nth-child(12n+4), .bg-deco-item:nth-child(12n+6), .bg-deco-item:nth-child(12n+8), .bg-deco-item:nth-child(12n+10), .bg-deco-item:nth-child(12n+12) {
+            transform: translateY(15%) rotate(8deg);
         }
 
         .bg-deco-item:hover {
-            transform: scale(1.2) rotate(0deg);
+            transform: scale(1.4) rotate(0deg) translateY(0) !important;
             opacity: 1;
             filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
             z-index: 100;
         }
 
-        @media (max-width: 800px) {
+        @media (max-width: 1000px) {
             .bg-deco-grid {
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(4, 1fr);
+                grid-template-columns: repeat(9, 1fr);
+                grid-template-rows: repeat(8, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .bg-deco-grid {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: repeat(10, 1fr);
             }
         }
 
         @media (max-width: 500px) {
             .bg-deco-grid {
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(5, 1fr);
-            }
-            .bg-deco-item {
-                padding: 10px;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(15, 1fr);
             }
         }
 
@@ -681,8 +718,56 @@
     </style>
 </head>
 <body>
-    <!-- 背景装饰元素 - 平铺整个页面 -->
+    <!-- 背景装饰元素 - 高低错落网格 -->
     <div class="bg-deco-grid">
+        <img src="图片5.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '好事发生')">
+        <img src="图片6.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '龙舟竞渡')">
+        <img src="图片7.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '福气满满')">
+        <img src="图片8.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '五彩绳系')">
+        <img src="图片9.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '粽香四溢')">
+        <img src="图片10.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '端午安康')">
+        <img src="图片5.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '好事发生')">
+        <img src="图片6.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '龙舟竞渡')">
+        <img src="图片7.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '福气满满')">
+        <img src="图片8.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '五彩绳系')">
+        <img src="图片9.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '粽香四溢')">
+        <img src="图片10.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '端午安康')">
+        <img src="图片5.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '好事发生')">
+        <img src="图片6.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '龙舟竞渡')">
+        <img src="图片7.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '福气满满')">
+        <img src="图片8.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '五彩绳系')">
+        <img src="图片9.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '粽香四溢')">
+        <img src="图片10.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '端午安康')">
+        <img src="图片5.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '好事发生')">
+        <img src="图片6.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '龙舟竞渡')">
+        <img src="图片7.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '福气满满')">
+        <img src="图片8.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '五彩绳系')">
+        <img src="图片9.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '粽香四溢')">
+        <img src="图片10.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '端午安康')">
+        <img src="图片5.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '好事发生')">
+        <img src="图片6.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '龙舟竞渡')">
+        <img src="图片7.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '福气满满')">
+        <img src="图片8.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '五彩绳系')">
+        <img src="图片9.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '粽香四溢')">
+        <img src="图片10.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '端午安康')">
+        <img src="图片5.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '好事发生')">
+        <img src="图片6.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '龙舟竞渡')">
+        <img src="图片7.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '福气满满')">
+        <img src="图片8.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '五彩绳系')">
+        <img src="图片9.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '粽香四溢')">
+        <img src="图片10.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '端午安康')">
+        <img src="图片5.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '好事发生')">
+        <img src="图片6.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '龙舟竞渡')">
+        <img src="图片7.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '福气满满')">
+        <img src="图片8.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '五彩绳系')">
+        <img src="图片9.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '粽香四溢')">
+        <img src="图片10.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '端午安康')">
+        <img src="图片5.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '好事发生')">
+        <img src="图片6.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '龙舟竞渡')">
+        <img src="图片7.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '福气满满')">
+        <img src="图片8.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '五彩绳系')">
+        <img src="图片9.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '粽香四溢')">
+        <img src="图片10.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '端午安康')">
         <img src="图片5.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '好事发生')">
         <img src="图片6.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '龙舟竞渡')">
         <img src="图片7.png" alt="" class="bg-deco-item" onclick="showFloatText(this, '福气满满')">
