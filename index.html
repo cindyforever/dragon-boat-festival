@@ -65,10 +65,10 @@
             right: 0;
             bottom: 0;
             display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            grid-template-rows: repeat(12, 1fr);
-            gap: 30px 20px;
-            padding: 20px;
+            grid-template-columns: repeat(auto-fill, 60px);
+            grid-template-rows: repeat(auto-fill, 70px);
+            gap: 15px 20px;
+            padding: 30px;
             z-index: 0;
             pointer-events: none;
             background-image:
@@ -89,8 +89,8 @@
         }
 
         .bg-deco-item {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
             cursor: pointer;
             transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
