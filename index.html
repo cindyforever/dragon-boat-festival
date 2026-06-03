@@ -535,7 +535,7 @@
 
         <!-- 祝福展示区（接收方） -->
         <div class="blessing-display" id="blessingDisplay">
-            <div class="sender-info">—— 服务与软件研发管理部上研分部端午祝福</div>
+            <div class="sender-info">🌿 收到一份端午祝福，请查收 🌿</div>
             <div class="blessing-text" id="blessingText"></div>
         </div>
 
@@ -553,6 +553,10 @@
                     <span class="preset-item" onclick="selectPreset(this)">粽香万里</span>
                     <span class="preset-item" onclick="selectPreset(this)">龙舟竞渡</span>
                     <span class="preset-item" onclick="selectPreset(this)">福运连连</span>
+                    <span class="preset-item" onclick="selectPreset(this)">如意吉祥</span>
+                    <span class="preset-item" onclick="selectPreset(this)">艾叶高悬</span>
+                    <span class="preset-item" onclick="selectPreset(this)">香囊伴你</span>
+                    <span class="preset-item" onclick="selectPreset(this)">岁岁年年</span>
                 </div>
             </div>
         </div>
@@ -577,8 +581,8 @@
             <span onclick="showFloatText(this, '好运+100')">🎋</span>
             <span onclick="showFloatText(this, '健康+100')">🍃</span>
             <span onclick="showFloatText(this, '财运+100')">💰</span>
-            <span onclick="showFloatText(this, '事业+80')">🌟</span>
-            <span onclick="showFloatText(this, '福气+90')">🐉</span>
+            <span onclick="showFloatText(this, '桃花+100')">🌸</span>
+            <span onclick="showFloatText(this, '事业+100')">🌟</span>
         </div>
     </div>
 
@@ -626,7 +630,9 @@
 
         // 龙舟图标点击效果
         document.getElementById('dragonBoatImg').addEventListener('click', function(e) {
-            showFloatText(this, '龙舟竞渡！');
+            const messages = ['好运+100', '健康+100', '财运+100', '福气+100', '快乐+100'];
+            const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+            showFloatText(this, randomMsg);
         });
 
         // 生成分享文案
