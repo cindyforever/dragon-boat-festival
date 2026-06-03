@@ -584,6 +584,11 @@
             <span onclick="showFloatText(this, '桃花+100')">🌸</span>
             <span onclick="showFloatText(this, '事业+100')">🌟</span>
         </div>
+
+        <!-- 统计小字 -->
+        <div style="text-align: center; margin-top: 16px; position: relative; z-index: 1;">
+            <span id="statsText" style="font-size: 0.7rem; color: #81c784; letter-spacing: 1px;"></span>
+        </div>
     </div>
 
     <!-- 飘字效果容器 -->
@@ -635,8 +640,31 @@
             showFloatText(this, randomMsg);
         });
 
+        // 获取祝福人次统计
+        function getBlessingCount() {
+            fetch('https://api.countapi.xyz/get/dragon-boat-festival-2026')
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('statsText').textContent = `🎉 已有 ${data.value} 位伙伴送上端午祝福`;
+                })
+                .catch(() => {
+                    document.getElementById('statsText').textContent = `🎉 端午祝福进行中`;
+                });
+        }
+
+        // 增加祝福人次
+        function incrementBlessingCount() {
+            fetch('https://api.countapi.xyz/hit/dragon-boat-festival-2026')
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('statsText').textContent = `🎉 已有 ${data.value} 位伙伴送上端午祝福`;
+                })
+                .catch(() => {});
+        }
+
         // 生成分享文案
         function generateShare() {
+            incrementBlessingCount();
             const name = document.getElementById('nameInput').value.trim() || '神秘伙伴';
             const blessing = getBlessing();
             const baseUrl = 'https://cindyforever.github.io/dragon-boat-festival/';
@@ -705,6 +733,7 @@ ${shareUrl}`;
 
         // 页面加载时检查URL参数
         window.onload = function() {
+            getBlessingCount();
             const urlParams = new URLSearchParams(window.location.search);
             const nameParam = urlParams.get('name');
             const blessingParam = urlParams.get('blessing');
