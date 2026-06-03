@@ -902,7 +902,7 @@
             const name = document.getElementById('nameInput').value.trim() || '神秘伙伴';
             const blessing = getBlessing();
             const baseUrl = 'https://cindyforever.github.io/dragon-boat-festival/';
-            const shareUrl = baseUrl + '?name=' + encodeURIComponent(name) + '&blessing=' + encodeURIComponent(blessing);
+            const shareUrl = baseUrl + '?n=' + encodeURIComponent(name) + '&b=' + encodeURIComponent(blessing);
 
             const shareText = `【好运粽动员 祝福派送中——服务与软件研发管理部上研分部2026端午活动】
 ✨ 好运粽动员 祝福派送中 😄亲爱的伙伴祝你${blessing}
@@ -1028,8 +1028,8 @@ ${shareUrl}`;
         window.onload = function() {
             getBlessingCount();
             const urlParams = new URLSearchParams(window.location.search);
-            const nameParam = urlParams.get('name');
-            const blessingParam = urlParams.get('blessing');
+            const nameParam = urlParams.get('n');
+            const blessingParam = urlParams.get('b');
 
             if (blessingParam) {
                 // 检查是否已统计过（同一浏览器同一会话不重复计数）
