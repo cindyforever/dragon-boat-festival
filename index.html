@@ -1069,7 +1069,7 @@
             const name = document.getElementById('nameInput').value.trim() || '神秘伙伴';
             const blessing = getBlessing();
             const baseUrl = 'https://cindyforever.github.io/dragon-boat-festival/';
-            const shareUrl = baseUrl + '?d=' + btoa(unescape(encodeURIComponent(name + '|' + blessing)));
+            const shareUrl = baseUrl + '?d=' + encodeURIComponent(btoa(unescape(encodeURIComponent(name + '|' + blessing))));
 
             const greeting = name === '神秘伙伴' ? '亲爱的伙伴' : name;
             const shareText = `【好运粽动员 祝福派送中——服务与软件研发管理部上研分部2026端午活动】
@@ -1205,7 +1205,7 @@ ${shareUrl}`;
                     sessionStorage.setItem('blessingCounted', 'true');
                 }
                 try {
-                    const decoded = decodeURIComponent(escape(atob(dataParam)));
+                    const decoded = decodeURIComponent(escape(atob(decodeURIComponent(dataParam))));
                     const [senderName, decodedBlessing] = decoded.split('|');
                     document.getElementById('blessingText').textContent = decodedBlessing;
                     document.getElementById('blessingDisplay').classList.add('active');
