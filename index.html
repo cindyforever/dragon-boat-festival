@@ -1051,14 +1051,18 @@
 
         // 获取祝福人次统计（使用localStorage）
         function getBlessingCount() {
-            let count = localStorage.getItem('dragonBoatCount') || 0;
+            let count = localStorage.getItem('dragonBoatCount');
+            if (!count || parseInt(count) < 516) {
+                count = 516;
+                localStorage.setItem('dragonBoatCount', count);
+            }
             count = parseInt(count);
             document.getElementById('statsText').textContent = `🎉 已有 ${count} 位伙伴收到端午祝福`;
         }
 
         // 增加祝福人次
         function incrementBlessingCount() {
-            let count = localStorage.getItem('dragonBoatCount') || 0;
+            let count = localStorage.getItem('dragonBoatCount') || 516;
             count = parseInt(count) + 1;
             localStorage.setItem('dragonBoatCount', count);
             document.getElementById('statsText').textContent = `🎉 已有 ${count} 位伙伴收到端午祝福`;

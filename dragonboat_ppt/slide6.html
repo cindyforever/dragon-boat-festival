@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+    width: 720pt; height: 405pt; margin: 0; padding: 0;
+    background: #FFF3E0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.header-bar {
+    background: #E07A5F;
+    height: 55pt;
+    display: flex;
+    align-items: center;
+    padding: 0 40pt;
+}
+.title {
+    font-size: 26pt;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+.content-grid {
+    display: flex;
+    flex: 1;
+    padding: 20pt 35pt;
+    gap: 18pt;
+}
+.game-card {
+    flex: 1;
+    background: white;
+    border-radius: 12pt;
+    padding: 18pt 12pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    position: relative;
+}
+.game-icon-wrap {
+    width: 65pt;
+    height: 65pt;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10pt;
+}
+.icon-boat { background: #E3F2FD; }
+.icon-ring { background: #FFF8E1; }
+.icon-photo { background: #FCE4EC; }
+.game-icon {
+    font-size: 32pt;
+}
+.game-title {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #1C3A5F;
+    margin: 6pt 0 4pt 0;
+    text-align: center;
+}
+.game-desc {
+    font-size: 9pt;
+    color: #666;
+    margin: 0;
+    text-align: center;
+    line-height: 1.4;
+}
+.game-tag {
+    position: absolute;
+    top: -6pt;
+    right: 12pt;
+    background: #E07A5F;
+    color: white;
+    font-size: 7pt;
+    padding: 2pt 8pt;
+    border-radius: 8pt;
+    font-weight: bold;
+}
+.tag-hot { background: #F5B841; }
+.tag-fun { background: #4A7C59; }
+.footer-text {
+    text-align: center;
+    padding: 8pt;
+}
+.footer-note {
+    font-size: 9pt;
+    color: #888;
+    margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <h1 class="title">智勇双全，"码"上争锋</h1>
+</div>
+
+<div class="content-grid">
+    <div class="game-card">
+        <span class="game-tag">团队竞技</span>
+        <div class="game-icon-wrap icon-boat">
+            <span class="game-icon">🚣</span>
+        </div>
+        <h3 class="game-title">线上划龙舟比赛</h3>
+        <p class="game-desc">通过手机/电脑小程序进行团队划龙舟竞速，科技感十足</p>
+    </div>
+    
+    <div class="game-card">
+        <span class="game-tag tag-hot">趣味投掷</span>
+        <div class="game-icon-wrap icon-ring">
+            <span class="game-icon">🎯</span>
+        </div>
+        <h3 class="game-title">一举高"粽"</h3>
+        <p class="game-desc">用套圈投掷粽子玩偶，寓意"一举高中"，祈福项目顺利</p>
+    </div>
+    
+    <div class="game-card">
+        <span class="game-tag tag-fun">欢乐留影</span>
+        <div class="game-icon-wrap icon-photo">
+            <span class="game-icon">📸</span>
+        </div>
+        <h3 class="game-title">趣味留影区</h3>
+        <p class="game-desc">提供端午主题相框和道具，即时打印照片，留下欢乐瞬间</p>
+    </div>
+</div>
+
+<div class="footer-text">
+    <p class="footer-note">🎮 精彩游戏，等你来战！</p>
+</div>
+</body>
+</html>

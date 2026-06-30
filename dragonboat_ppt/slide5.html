@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+    width: 720pt; height: 405pt; margin: 0; padding: 0;
+    background: #FFF8E7;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.header-bar {
+    background: #2D5A27;
+    height: 55pt;
+    display: flex;
+    align-items: center;
+    padding: 0 40pt;
+}
+.title {
+    font-size: 26pt;
+    font-weight: bold;
+    color: #FFF8E7;
+    margin: 0;
+}
+.content-area {
+    display: flex;
+    flex: 1;
+    padding: 20pt 35pt;
+    gap: 25pt;
+}
+.text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20pt;
+}
+.activity-item {
+    background: white;
+    border-radius: 12pt;
+    padding: 18pt 22pt;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    border-left: 5pt solid #4A7C59;
+}
+.activity-item2 {
+    border-left-color: #F5B841;
+}
+.activity-title {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #2D5A27;
+    margin: 0 0 6pt 0;
+    display: flex;
+    align-items: center;
+    gap: 8pt;
+}
+.activity-title2 {
+    color: #F5B841;
+}
+.activity-icon {
+    font-size: 20pt;
+}
+.activity-desc {
+    font-size: 11pt;
+    color: #555;
+    margin: 0;
+    line-height: 1.4;
+}
+.image-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12pt;
+}
+.image-card {
+    flex: 1;
+    background: white;
+    border-radius: 12pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2D5A27;
+    padding: 6pt 12pt;
+}
+.card-overlay2 {
+    background: #F5B841;
+}
+.overlay-text {
+    font-size: 10pt;
+    color: white;
+    margin: 0;
+}
+.emoji-large {
+    font-size: 45pt;
+    margin-bottom: 8pt;
+}
+.emoji-title {
+    font-size: 13pt;
+    font-weight: bold;
+    margin: 0;
+}
+.title-green {
+    color: #2D5A27;
+}
+.title-yellow {
+    color: #F5B841;
+}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <h1 class="title">手作时光，粽情心意</h1>
+</div>
+
+<div class="content-area">
+    <div class="text-section">
+        <div class="activity-item">
+            <h3 class="activity-title">
+                <span class="activity-icon">🫔</span>
+                包粽子体验
+            </h3>
+            <p class="activity-desc">专业师傅指导，甜咸粽料自选，体验亲手制作的乐趣</p>
+        </div>
+        
+        <div class="activity-item activity-item2">
+            <h3 class="activity-title activity-title2">
+                <span class="activity-icon">💐</span>
+                香囊DIY
+            </h3>
+            <p class="activity-desc">配备多种中药材和香囊包，制作专属辟邪祈福香囊</p>
+        </div>
+    </div>
+    
+    <div class="image-section">
+        <div class="image-card">
+            <p class="emoji-large">🫔</p>
+            <p class="emoji-title title-green">端午·粽香</p>
+            <div class="card-overlay">
+                <p class="overlay-text">手工包粽 · 传承文化</p>
+            </div>
+        </div>
+        
+        <div class="image-card">
+            <p class="emoji-large">💐</p>
+            <div class="card-overlay card-overlay2">
+                <p class="overlay-text">香囊祈福 · DIY香囊</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+    width: 720pt; height: 405pt; margin: 0; padding: 0;
+    background: #FFF8E7;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.header-bar {
+    background: #2D5A27;
+    height: 60pt;
+    display: flex;
+    align-items: center;
+    padding: 0 40pt;
+}
+.title {
+    font-size: 28pt;
+    font-weight: bold;
+    color: #FFF8E7;
+    margin: 0;
+}
+.content-area {
+    display: flex;
+    flex: 1;
+    padding: 30pt 40pt;
+    gap: 25pt;
+}
+.agenda-item {
+    flex: 1;
+    background: white;
+    border-radius: 12pt;
+    padding: 25pt 20pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+.num-badge {
+    position: absolute;
+    top: -15pt;
+    width: 30pt;
+    height: 30pt;
+    background: #F5B841;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14pt;
+    font-weight: bold;
+    color: white;
+}
+.icon-circle {
+    width: 60pt;
+    height: 60pt;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15pt;
+    margin-top: 10pt;
+}
+.icon-flag { background: #E8F5E9; }
+.icon-clock { background: #E3F2FD; }
+.icon-game { background: #FFF3E0; }
+.icon-budget { background: #FCE4EC; }
+.icon-emoji {
+    font-size: 28pt;
+}
+.agenda-title {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #1C3A5F;
+    margin: 0 0 8pt 0;
+    text-align: center;
+}
+.agenda-desc {
+    font-size: 11pt;
+    color: #666;
+    margin: 0;
+    text-align: center;
+    line-height: 1.4;
+}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <h1 class="title">活动议程一览</h1>
+</div>
+
+<div class="content-area">
+    <div class="agenda-item">
+        <div class="num-badge"><p>1</p></div>
+        <div class="icon-circle icon-flag">
+            <p class="icon-emoji">🎯</p>
+        </div>
+        <h3 class="agenda-title">活动主题与目标</h3>
+        <p class="agenda-desc">传承·创新·聚力·连接</p>
+    </div>
+    
+    <div class="agenda-item">
+        <div class="num-badge"><p>2</p></div>
+        <div class="icon-circle icon-clock">
+            <p class="icon-emoji">⏱️</p>
+        </div>
+        <h3 class="agenda-title">活动流程总览</h3>
+        <p class="agenda-desc">时间安排与项目导览</p>
+    </div>
+    
+    <div class="agenda-item">
+        <div class="num-badge"><p>3</p></div>
+        <div class="icon-circle icon-game">
+            <p class="icon-emoji">🎮</p>
+        </div>
+        <h3 class="agenda-title">精彩项目预览</h3>
+        <p class="agenda-desc">线下体验 + 线上互动</p>
+    </div>
+    
+    <div class="agenda-item">
+        <div class="num-badge"><p>4</p></div>
+        <div class="icon-circle icon-budget">
+            <p class="icon-emoji">💰</p>
+        </div>
+        <h3 class="agenda-title">分工与预算说明</h3>
+        <p class="agenda-desc">周密筹备，保障落地</p>
+    </div>
+</div>
+</body>
+</html>

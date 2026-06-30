@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+    width: 720pt; height: 405pt; margin: 0; padding: 0;
+    background: #2D5A27;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.main-content {
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+.main-invite {
+    font-size: 40pt;
+    font-weight: bold;
+    color: #FFF8E7;
+    margin: 0 0 12pt 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.sub-invite {
+    font-size: 15pt;
+    color: #FFF8E7;
+    margin: 0 0 25pt 0;
+    opacity: 0.9;
+}
+.slogan-box {
+    background: rgba(255,248,231,0.2);
+    border: 2pt solid #F5B841;
+    border-radius: 12pt;
+    padding: 18pt 45pt;
+    display: inline-block;
+}
+.slogan-main {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #F5B841;
+    margin: 0 0 6pt 0;
+}
+.slogan-sub {
+    font-size: 13pt;
+    color: #FFF8E7;
+    margin: 0;
+}
+.corner-deco {
+    position: absolute;
+    width: 80pt;
+    height: 80pt;
+}
+.corner-tl {
+    top: 20pt;
+    left: 20pt;
+    border-top: 3pt solid #F5B841;
+    border-left: 3pt solid #F5B841;
+}
+.corner-tr {
+    top: 20pt;
+    right: 20pt;
+    border-top: 3pt solid #F5B841;
+    border-right: 3pt solid #F5B841;
+}
+.corner-bl {
+    bottom: 20pt;
+    left: 20pt;
+    border-bottom: 3pt solid #F5B841;
+    border-left: 3pt solid #F5B841;
+}
+.corner-br {
+    bottom: 20pt;
+    right: 20pt;
+    border-bottom: 3pt solid #F5B841;
+    border-right: 3pt solid #F5B841;
+}
+.float-emoji {
+    position: absolute;
+    font-size: 35pt;
+    opacity: 0.3;
+}
+.emoji-1 { top: 50pt; left: 70pt; }
+.emoji-2 { bottom: 80pt; right: 80pt; }
+.emoji-3 { bottom: 80pt; left: 50pt; }
+.emoji-4 { top: 60pt; right: 100pt; }
+</style>
+</head>
+<body>
+<div class="corner-deco corner-tl"></div>
+<div class="corner-deco corner-tr"></div>
+<div class="corner-deco corner-bl"></div>
+<div class="corner-deco corner-br"></div>
+
+<span class="float-emoji emoji-1">🫔</span>
+<span class="float-emoji emoji-2">💐</span>
+<span class="float-emoji emoji-3">🚣</span>
+<span class="float-emoji emoji-4">💌</span>
+
+<div class="main-content">
+    <h1 class="main-invite">期待您的参与！</h1>
+    <p class="sub-invite">线下欢聚，线上联动，让我们共度一个充满欢声笑语的端午佳节！</p>
+    
+    <div class="slogan-box">
+        <p class="slogan-main">粽叶飘香，代码传情！</p>
+        <p class="slogan-sub">祝大家端午安康！</p>
+    </div>
+</div>
+</body>
+</html>

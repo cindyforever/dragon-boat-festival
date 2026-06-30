@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+    width: 720pt; height: 405pt; margin: 0; padding: 0;
+    background: #F4F1DE;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.header-bar {
+    background: #1C3A5F;
+    height: 55pt;
+    display: flex;
+    align-items: center;
+    padding: 0 40pt;
+}
+.title {
+    font-size: 26pt;
+    font-weight: bold;
+    color: #FFF8E7;
+    margin: 0;
+}
+.content-area {
+    display: flex;
+    flex: 1;
+    padding: 18pt 30pt;
+    gap: 20pt;
+}
+.section-left {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 12pt;
+}
+.section-title {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #1C3A5F;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 6pt;
+}
+.section-icon {
+    font-size: 16pt;
+}
+.table-container {
+    background: white;
+    border-radius: 10pt;
+    padding: 12pt;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+.table-row {
+    display: flex;
+    padding: 8pt 0;
+    border-bottom: 1pt solid #eee;
+}
+.table-row:last-child {
+    border-bottom: none;
+}
+.row-label {
+    width: 85pt;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #2D5A27;
+    display: flex;
+    align-items: center;
+    gap: 4pt;
+}
+.row-content {
+    flex: 1;
+    font-size: 9pt;
+    color: #555;
+}
+.row-icon {
+    font-size: 11pt;
+}
+.section-right {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 12pt;
+}
+.budget-card {
+    flex: 1;
+    background: white;
+    border-radius: 12pt;
+    padding: 12pt;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+.budget-title {
+    font-size: 13pt;
+    font-weight: bold;
+    color: #1C3A5F;
+    margin: 0 0 8pt 0;
+    text-align: center;
+}
+.pie-placeholder {
+    height: 85pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pie-visual {
+    width: 70pt;
+    height: 70pt;
+    border-radius: 50%;
+    background: #2D5A27;
+    position: relative;
+}
+.pie-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35pt;
+    height: 35pt;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #1C3A5F;
+}
+.budget-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6pt;
+    margin-top: 8pt;
+    justify-content: center;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 3pt;
+    font-size: 7pt;
+    color: #666;
+}
+.legend-dot {
+    width: 9pt;
+    height: 9pt;
+    border-radius: 50%;
+}
+.footer-note {
+    background: #E8F5E9;
+    border-radius: 8pt;
+    padding: 8pt 12pt;
+}
+.note-text {
+    font-size: 8pt;
+    color: #2D5A27;
+    margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="header-bar">
+    <h1 class="title">周密筹备，保障落地</h1>
+</div>
+
+<div class="content-area">
+    <div class="section-left">
+        <div>
+            <h3 class="section-title">
+                <span class="section-icon">👥</span>
+                活动分工
+            </h3>
+            <div class="table-container">
+                <div class="table-row">
+                    <div class="row-label">
+                        <span class="row-icon">🎯</span>
+                        <p>总协调组</p>
+                    </div>
+                    <div class="row-content"><p>XXX - 负责整体统筹与进度把控</p></div>
+                </div>
+                <div class="table-row">
+                    <div class="row-label">
+                        <span class="row-icon">📦</span>
+                        <p>物资组</p>
+                    </div>
+                    <div class="row-content"><p>XXX - 负责食材、物料采购与分发</p></div>
+                </div>
+                <div class="table-row">
+                    <div class="row-label">
+                        <span class="row-icon">📢</span>
+                        <p>宣传组</p>
+                    </div>
+                    <div class="row-content"><p>XXX - 负责现场布置、摄影及线上祝福活动预热引导</p></div>
+                </div>
+                <div class="table-row">
+                    <div class="row-label">
+                        <span class="row-icon">💻</span>
+                        <p>技术支持组</p>
+                    </div>
+                    <div class="row-content"><p>XXX - 保障线上比赛流畅及祝福平台稳定运行</p></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            <p class="note-text">💡 提示：各小组需在活动前3天完成准备工作，活动当天提前30分钟到场</p>
+        </div>
+    </div>
+    
+    <div class="section-right">
+        <div class="budget-card">
+            <h3 class="budget-title">💰 活动预算</h3>
+            <div class="pie-placeholder">
+                <div class="pie-visual">
+                    <div class="pie-center"><p>总预算</p></div>
+                </div>
+            </div>
+            <div class="budget-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #2D5A27;"></div>
+                    <p>物料费 30%</p>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #F5B841;"></div>
+                    <p>食材费 25%</p>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #E07A5F;"></div>
+                    <p>奖品费 25%</p>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #2C5F7C;"></div>
+                    <p>平台费 20%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
